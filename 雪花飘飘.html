@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100%;
+        }
+        #mycanvas{
+            background: #201b75;
+        }
+    </style>
+
+</head>
+<body>
+    <canvas id="mycanvas" width="1000" height="800">
+
+    </canvas>
+
+    <script>
+
+        window.onload= function () {
+            var canvas = document.getElementById("mycanvas");
+            var con=canvas.getContext('2d');
+            var particles=[];//声明一个空数组
+
+            for(var i=0;i<1000;i++){
+                particles.push({//将雪花对象装到数组里
+                    x:Math.random()*(window.innerWidth),
+                    y:Math.random()*(window.innerHeight),
+                    vx:Math.random()-0.5,
+                    vy:Math.random()+0.5,
+                    color:"#fff",
+                    size:Math.random()*3+1
+                })
+            }
+  //          console.log(particles);
+            function drowSnow(){//将雪花画到画布里面
+                con.clearRect(0,0,canvas.width,canvas.height)
+                var pic;
+                for(var i=0;i<1000;i++){
+                    var pic=particles[i];
+                    pic.x+=particles[i].vx;
+                    pic.y+=particles[i].vy;
+                    if(pic.x<0){pic.x=window.innerWidth;}
+                    if(pic.x>window.innerWidth){pic.x=0}
+                    if(pic.y>window.innerHeight){pic.y=0};
+                    con.beginPath();
+                    con.arc(pic.x,pic.y,pic.size,0,360*Math.PI/180);
+                    con.closePath();
+                    con.fillStyle=pic.color;
+                    con.fill();
+                }
+            }
+
+            setInterval(drowSnow,40);
+        }
+    </script>
+</body>
+</html>

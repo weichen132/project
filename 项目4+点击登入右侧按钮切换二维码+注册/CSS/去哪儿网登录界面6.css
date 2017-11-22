@@ -1,0 +1,430 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    width: 100%;
+    height: 28px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+#top ul li{
+    float: left;
+    list-style: none;
+    font-size: 12px;
+    margin: 7px 10px;
+
+}
+#top ul {
+   padding-left: 1020px;
+}
+#log{
+    width: 988px;
+    height: 100px;
+    /*
+    border: 1px solid black;
+    */
+    margin: 0 auto;
+    border-bottom:1px solid #cccccc ;
+}
+#middle{
+    /*border: 1px solid black;*/
+    width: 1002px;
+    height: 500px;
+    margin: 0 auto;
+}
+#left1{
+    width: 589px;
+    height: 196px;
+    /*
+    border: 1px solid black;
+    */
+    margin: 20px 20px;
+}
+#left_img{
+    margin: 0px 15px;
+}
+
+#left{
+    width: 630px;
+    height: 500px;
+/*    border: 1px solid red;*/
+}
+#right{
+   /* border: 1px solid black;*/
+    width: 360px;
+    height: 500px;
+    margin-left: 5px;
+    background-color:#f6f6f6;
+   /* display: none;*/
+}
+#left,#right{
+    float: left;
+}
+#left_img,#wenzi{
+    float: left;
+}
+#wenzi li{
+    list-style: none;
+}
+#wenzi {
+    margin:30px;
+}
+
+/*
+<!--账号登录,短信登录-->*/
+
+#right1{
+    margin: 30px;
+    font-size: 13px;
+
+}
+/*账号输入框*/
+#right2{
+ width: 249px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    margin-left: 30px;
+    background-color: white;
+}
+#right2 i{
+    float: left;
+    background: url(../img/QNEimage/login-icon-v2.png) no-repeat -130px -90px;
+    width: 11px;
+    height: 11px;
+    margin: 9px 10px 0;
+   /* border-right:1px solid #cccccc ;
+    padding-right: 10px;*/
+}
+#right2 input{
+    color: #666;
+    float: left;
+    margin-top: 4px;
+    height: 20px;
+    line-height: 20px;
+    width: 182px;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+
+
+
+/*密码输入框*/
+#right3{
+    margin-top: 30px;
+    width: 249px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    margin-left: 30px;
+    background-color: white;
+}
+#right3 i{
+    float: left;
+    background: url(../img/QNEimage/login-icon-v2.png) no-repeat -130px -101px;
+    width: 11px;
+    height: 11px;
+    margin: 9px 10px 0;
+    /* border-right:1px solid #cccccc ;
+     padding-right: 10px;*/
+}
+#right3 input{
+    color: #666;
+    float: left;
+    margin-top: 4px;
+    height: 20px;
+    line-height: 20px;
+    width: 182px;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+/*插入的手机验证码框*/
+#right3x{
+    margin-top: 30px;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    margin-left: 30px;
+    background-color: white;
+    display: none;
+/*    border: 1px solid black;*/
+}
+#right3x i{
+    float: left;
+    background: url(../img/QNEimage/login-icon-v2.png) no-repeat -130px -101px;
+    width: 11px;
+    height: 11px;
+    margin: 9px 10px 0;
+    /* border-right:1px solid #cccccc ;
+     padding-right: 10px;*/
+}
+#inp2x{
+    color: #666;
+    float: left;
+    margin-top: 5px;
+    /*margin-top: 4px;*/
+   /* margin-top: -12px;
+    margin-left: 30px;*/
+    height: 20px;
+    line-height: 20px;
+    width: 111px;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    font-size: 14px;
+}
+#right3x a{
+    float: right;
+    display: inline-block;
+    float: right;
+    width: 85px;
+    height: 22px;
+    line-height: 22px;
+    _line-height: 24px;
+    color: #fff;
+    text-align: center;
+    background: url(https://user.qunar.com/images/ugc/ucenter/login-icon-v2.png) no-repeat 0 -90px;
+    overflow: hidden;
+    margin-top: 5px;
+    text-decoration: none;
+
+}
+
+
+
+
+/*验证码和*/
+#right4{
+    margin-top: 30px;
+    width: 249px;
+    height: 30px;
+   /* border: 1px solid #cccccc;*/
+    margin-left: 30px;
+}
+
+#input1{
+    width: 147px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+#yanzheng{
+    width: 85px;
+    height: 30px;
+    /*border: 1px solid black;*/
+    float: right;
+}
+#aaa{
+    position: relative;
+   left: 300px;
+    top: -30px;
+    line-height: 30px;
+    text-decoration: none;
+    color:#0069ca ;
+    font-size: 14px;
+}
+
+/*三个月内自动登录*/
+#right5 {
+    /*margin-top: 30px;*/
+    width: 249px;
+    height: 30px;
+    /* border: 1px solid #cccccc;*/
+    margin-left: 30px;
+   /* border: 1px solid black;*/
+    font-size: 12px;
+    line-height: 26px;
+}
+#right5 a{
+    text-decoration: none;
+
+}
+#right5 a:hover{
+    color: red;
+}
+/*登录按钮*/
+#right6 input{
+    border: 0;
+    display: inline-block;
+    background: url(../img/QNEimage/pic_v4.png) no-repeat 0 0;
+    overflow: hidden;
+    width: 249px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    font: bold 14px/30px '宋体';
+    margin: 20px 30px 0;
+
+
+}
+/**/
+#right7{
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 280px;
+    height: 0px;
+    border-top: 1px solid #cccccc;
+}
+#right7_1{
+    position: relative;
+    left: 90px;
+    top: -10px;
+    /*border: 1px solid black;*/
+    width: 100px;
+    height: 18px;
+    background-color: #f6f6f6;
+    font-size: 14px;
+    text-align: center;
+}
+
+#right8{
+    margin-top: 20px;
+    margin-left: 12px;
+}
+#right8 a{
+    color: #696969;
+    text-decoration: none;
+    margin: 0 8px;
+}
+#right8 a:hover{
+    color: #f60;
+}
+.a1{
+    background: url(../img/QNEimage/icon16_wx_logo.png) no-repeat 0 0px;
+    padding-left: 20px;
+}
+
+.a2{
+    background: url(../img/QNEimage/login_link_icon.png) no-repeat 0 -146px;
+    padding-left: 20px;
+}
+.a3{
+    background: url(../img/QNEimage/login_link_icon.png) no-repeat 0 0px;
+    padding-left: 20px;
+}
+.a4{
+    background: url(../img/QNEimage/login_link_icon.png) no-repeat 0 -30px;
+    padding-left: 20px;
+}
+
+
+/*用户名或密码错误*/
+#right9{
+
+    margin-top: 20px;
+    width: 249px;
+    height: 30px;
+    margin-left: 30px;
+    border: 1px solid #f8d3a7;
+    background: #fffedf;
+    font-size: 14px;
+    line-height: 30px;
+
+}
+
+#right9 i{
+    float: left;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background: url(../img/QNEimage/icon-btn.png) no-repeat -16px -83px;
+    margin-right: 5px;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+
+#right9{
+    display: none;
+}
+
+/*点击的时候,切换登录界面*/
+#cg{/*这个小方框作为父亲容器*/
+    background-color: #f6f6f6;
+    position: absolute;
+    z-index: 1;
+    left: 84%;
+    top: 130px;
+    width: 45px;
+    height: 44px;
+    /*border: 1px solid black;*/
+    /*border-bottom-left-radius:150% ;*/
+    overflow: hidden;
+   /* border: 1px solid black;*/
+}
+#cg_a{
+    display: inline-block;
+   /* border: 1px solid black;*/
+    width: 100px;
+    height: 100px;
+    background: url("../img/QNEimage/qr-2.png") no-repeat 0 0;
+    transform: translate(0,0);
+    transition: transform 0.4s linear;
+}
+/*先用hover测试*/
+/*
+#cg:hover #cg_a{
+    transform: translate(-61px,-61px);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*网页尾部*/
+#last{
+   /* border: 1px solid black;*/
+    width: 1002px;
+    height: 200px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #747474;
+    text-align: center;
+}
+#last div{
+    margin: 15px 0px;
+}
+#span1{
+    background: url(../img/QNEimage/24h.png) no-repeat left center;
+    padding-left: 20px;
+}
+
+
+/*插入隐藏的微信登录界面*/
+#rightx{
+ /*   border: 1px solid black;*/
+    width: 360px;
+    height: 500px;
+    margin-left: 5px;
+    background-color:white;
+    float: left;
+    display: none;
+    background:#f6f6f6 ;
+}

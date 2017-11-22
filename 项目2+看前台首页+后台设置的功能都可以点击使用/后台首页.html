@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台首页</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        #listgroup li{
+            background: #2f3439;
+        }
+        #listgroup li a{
+            color:#9d9d9d;
+        }
+        #rt{
+            color: #9d9d9d;
+        }
+        #yhtab1{
+            background-color: #2f3439;
+        }
+    </style>
+</head>
+<body>
+<!--后台导航部分 响应式导航栏-->
+    <nav id="nav1" class="navbar navbar-default navbar-fixed-top " style="padding:0px 40px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="" class="navbar-brand text-capitalize" style="font-size: 25px">maizi admin</a>
+            </div>
+
+            <div id="mynav" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+            <li class="active"><a href="后台首页.html" data-toggle="tab" class="glyphicon glyphicon-home "> 后台首页</a></li>
+            <li><a href="用户管理.html"  class="glyphicon glyphicon-user"> 用户管理</a></li>
+            <!--<li><a href="#tabthree" data-toggle="tab" class="glyphicon glyphicon-list-alt"> 内容管理</a></li>-->
+                    <li><a href="内容管理.html"  class="glyphicon glyphicon-list-alt"> 内容管理</a></li>
+            <li><a href="标签管理.html"  class="glyphicon glyphicon-tag"> 标签管理</a></li>
+                </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li  class="dropdown ">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">admin <span class="caret"></span></a>
+                    <ul  class="dropdown-menu ">
+                    <li><a href="前台首页.html">个人主页</a></li>
+                    <li><a href="">设置</a></li>
+                    <li><a href="">关于</a></li>
+                     </ul>
+                </li>
+                <li><a href="前台首页.html" class="glyphicon glyphicon-off"> 退出</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="tab-content">
+    <!--tab分页的首页1-->
+    <div id="tabone" class="tab-pane active">
+        <!--警告栏-->
+<div class="alert alert-danger center-block" style="width: 90%;margin-top: 70px ">
+    <button class="close" data-dismiss="alert"><span>&times;</span></button>
+    <h1>网站存在漏洞，急需修复！</h1>
+    <p>当前版本程序(V1.22)存在严重安全问题，容易造成攻击，请即可修复！</p>
+    <button class="btn btn-danger" data-dismiss="alert">立即修复</button>
+    <button class="btn btn-default" data-dismiss="alert">稍后处理</button>
+</div>
+<!--中间4栏-->
+<div class="container" style="width: 93%;margin-top: 60px">
+    <div class="row">
+        <div class="col-lg-6 cg-md-6 col-sm-6 col-xs-6" style="">
+            <div class="panel panel-default">
+                <div class="panel-heading">网站数据统计</div>
+                <table class="table table-hover " style="width: 90%;margin: 20px">
+                    <thead>
+                        <th>统计项目</th>
+                        <th>今日</th>
+                        <th>昨日</th>
+                    </thead>
+                    <tbody id="tb">
+                    <tr>
+                        <td>注册会员</td>
+                        <td>200</td>
+                        <td>400</td>
+                    </tr>
+                    <tr>
+                        <td>登录会员</td>
+                        <td>4100</td>
+                        <td>5112</td>
+                    </tr>
+                    <tr>
+                        <td>今日发帖</td>
+                        <td>1540</td>
+                        <td>4511</td>
+                    </tr>
+                    <tr>
+                        <td>转载次数</td>
+                        <td>150</td>
+                        <td>110</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-6 cg-md-6 col-sm-6 col-xs-6" style="">
+            <div class="panel panel-default">
+                <div class="panel-heading">网站热帖</div>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooz职业病，效果和就业为王 <span class="pull-right">2015/8/8</span></a></li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooz职业病，效果和就业为王 <span class="pull-right">2015/8/8</span></a></li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooz职业病，效果和就业为王 <span class="pull-right">2015/8/8</span></a></li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooz职业病，效果和就业为王 <span class="pull-right">2015/8/8</span></a></li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooz职业病，效果和就业为王 <span class="pull-right">2015/8/8</span></a></li>
+                    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooz职业病，效果和就业为王 <span class="pull-right">2015/8/8</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div  class="col-lg-6 cg-md-6 col-sm-6 col-xs-6" style="">
+            <div class="panel panel-default">
+                <div class="panel-heading">今日访客统计</div>
+                <canvas id="charts"  width="550px" height="300px" class="center-block" style="margin-top: 10px" ></canvas>
+            </div>
+        </div>
+        <div  class="col-lg-6 cg-md-6 col-sm-6 col-xs-6" style="">
+            <div class="panel panel-default">
+                <div class="panel-heading">服务器状态</div>
+                <div class="panel-body">
+                    <p>内存使用率:40%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 50%"></div>
+                    </div>
+                    <p>数据库使用率：20%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 20%"></div>
+                    </div>
+                    <p>键盘使用率：60%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 60%"></div>
+                    </div>
+                    <p>CPU使用率：80%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active" style=" width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--团队留言板块-->
+<div class="panel panel-default center-block" style="width: 91%">
+    <div class="panel-heading">团队留言板</div>
+    <div class="container-fluid" style="">
+        <div class="row">
+                <div id="ly" class="col-lg-7 cg-md-7 col-sm-7 col-xs-7" style="height: 500px;overflow-y: scroll;"></div>
+                <div  class="col-lg-5 cg-md-5 col-sm-5 col-xs-5" style="height: 500px">
+                    <h5 style="font-weight: bold">输入留言内容</h5>
+                    <textarea id="texta" style="width: 100%;height: 100px"></textarea>
+                    <button class="btn btn-default" style="margin: 10px auto" id="btn1">留言</button>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">团队联系手册</div>
+                        <div class="container-fluid">
+                            <div class="list-group center-block" style="margin-bottom: 30px;margin-top: 20px">
+                                <li class="list-group-item">站长(李小龙)：<span class="glyphicon glyphicon-phone"></span>18622155462</li>
+                                <li class="list-group-item">技术(沙和尚)：<span class="glyphicon glyphicon-phone"></span>13856981245</li>
+                                <li class="list-group-item">推广(白龙马)：<span class="glyphicon glyphicon-phone"></span>17621500468</li>
+                                <li class="list-group-item">客服(小龙女)：<span class="glyphicon glyphicon-phone"></span>15997405008 <span class="glyphicon glyphicon-phone-alt"></span>021-888888</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</div>
+<!--结尾-->
+<div class="bg-danger text-center container-fluid"  style="margin-top: -20px">
+    <p style="margin: 25px auto;">Copyright ©360.cn. All Rights Reserved.</p>
+</div>
+<!--留言的2个模版-->
+<!--<div class="panel panel-default" style="width: 500px;">
+    <div class="panel-heading" ><img style="width: 10%;height: 10%" src="images/a.png" alt="">nr</div>
+</div>
+<div class="panel panel-default" style="width: 500px;">
+    <div class="panel-heading text-right " >nr<img  style="width: 10%;height: 10%;" src="images/i.png" alt=""></div>
+</div>-->
+    </div>
+    <!--用户管理分页-->
+    <div id="tabtwo" class="tab-pane " >
+       <div class="container-fluid" style="border: 1px solid white;background: #292c31">
+           <div class="row" style="margin-top: 80px">
+               <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"  style="border: 1px solid white;height: 800px">
+                   <div id="listgroup" class="list-group" >
+                       <li class="list-group-item"><a href="" >用户管理</a></li>
+                       <li class="list-group-item"><a href="" >用户搜索</a></li>
+                       <li class="list-group-item"><a href="" >添加用户</a></li>
+                   </div>
+               </div>
+               <div id="rt" class="col-lg-10 col-md-10  col-sm-10 col-xs-10"  style="border: 1px solid white;height: 800px">
+                    <p class="lead" style="border-bottom: 2px solid black;padding-bottom: 10px;color: white">用户管理</p>
+                   <!--用户列表 ，用户搜索 ， 添加用户3分页-->
+                   <div class="container">
+                       <ul class="nav nav-tabs">
+                           <li><a href="#yhtab1" data-toggle="tab">用户列表</a></li>
+                           <li><a href="#yhtab2" data-toggle="tab">用户搜索</a></li>
+                           <li><a href="#yhtab3" data-toggle="tab">添加用户</a></li>
+                       </ul>
+                       <div class="tab-content">
+                           <!--用户列表页面-->
+                           <div id="yhtab1" class="tab-pane active" style="border: 1px solid red">
+                               <table class="table" >
+                                       <thead>
+                                       <tr>
+                                           <th>ID</th>
+                                           <th>用户名</th>
+                                           <th>邮箱</th>
+                                           <th>操作</th>
+                                       </tr>
+                                       </thead>
+                                       <tbody>
+                                       <tr>
+                                           <td>1</td>
+                                           <td>张三</td>
+                                           <td>13265451445@qq.com</td>
+                                           <td class="dropdown">
+                                               <button class="btn dropdown-toggle" data-toggle="dropdown" >操作<span class="caret"></span></button>
+                                               <ul class="dropdown-menu">
+                                                   <li><a href="">编辑</a></li>
+                                                   <li><a href="">删除</a></li>
+                                                   <li><a href="">锁定</a></li>
+                                                   <li><a href="">修改密码</a></li>
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>2</td>
+                                           <td>李四</td>
+                                           <td>451515654@qq.com</td>
+                                           <td class="dropdown">
+                                               <button class="btn dropdown-toggle" data-toggle="dropdown" >操作<span class="caret"></span></button>
+                                               <ul class="dropdown-menu">
+                                                   <li><a href="">编辑</a></li>
+                                                   <li><a href="">删除</a></li>
+                                                   <li><a href="">锁定</a></li>
+                                                   <li><a href="">修改密码</a></li>
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>2</td>
+                                           <td>李四</td>
+                                           <td>451515654@qq.com</td>
+                                           <td class="dropdown">
+                                               <button class="btn dropdown-toggle" data-toggle="dropdown" >操作<span class="caret"></span></button>
+                                               <ul class="dropdown-menu">
+                                                   <li><a href="">编辑</a></li>
+                                                   <li><a href="">删除</a></li>
+                                                   <li><a href="">锁定</a></li>
+                                                   <li><a href="">修改密码</a></li>
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>2</td>
+                                           <td>李四</td>
+                                           <td>451515654@qq.com</td>
+                                           <td class="dropdown">
+                                               <button class="btn dropdown-toggle" data-toggle="dropdown" >操作<span class="caret"></span></button>
+                                               <ul class="dropdown-menu">
+                                                   <li><a href="">编辑</a></li>
+                                                   <li><a href="">删除</a></li>
+                                                   <li><a href="">锁定</a></li>
+                                                   <li><a href="">修改密码</a></li>
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>2</td>
+                                           <td>李四</td>
+                                           <td>451515654@qq.com</td>
+                                           <td class="dropdown">
+                                               <button class="btn dropdown-toggle" data-toggle="dropdown" >操作<span class="caret"></span></button>
+                                               <ul class="dropdown-menu">
+                                                   <li><a href="">编辑</a></li>
+                                                   <li><a href="">删除</a></li>
+                                                   <li><a href="">锁定</a></li>
+                                                   <li><a href="">修改密码</a></li>
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>2</td>
+                                           <td>李四</td>
+                                           <td>451515654@qq.com</td>
+                                           <td class="dropdown">
+                                               <button class="btn dropdown-toggle" data-toggle="dropdown" >操作<span class="caret"></span></button>
+                                               <ul class="dropdown-menu">
+                                                   <li><a href="">编辑</a></li>
+                                                   <li><a href="">删除</a></li>
+                                                   <li><a href="">锁定</a></li>
+                                                   <li><a href="">修改密码</a></li>
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>2</td>
+                                           <td>李四</td>
+                                           <td>451515654@qq.com</td>
+                                           <td class="dropdown">
+                                               <button class="btn dropdown-toggle" data-toggle="dropdown" >操作<span class="caret"></span></button>
+                                               <ul class="dropdown-menu">
+                                                   <li><a href="">编辑</a></li>
+                                                   <li><a href="">删除</a></li>
+                                                   <li><a href="">锁定</a></li>
+                                                   <li><a href="">修改密码</a></li>
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>2</td>
+                                           <td>李四</td>
+                                           <td>451515654@qq.com</td>
+                                           <td class="dropdown">
+                                               <button class="btn dropdown-toggle" data-toggle="dropdown" >操作<span class="caret"></span></button>
+                                               <ul class="dropdown-menu">
+                                                   <li><a href="">编辑</a></li>
+                                                   <li><a href="">删除</a></li>
+                                                   <li><a href="">锁定</a></li>
+                                                   <li><a href="">修改密码</a></li>
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>2</td>
+                                           <td>李四</td>
+                                           <td>451515654@qq.com</td>
+                                           <td class="dropdown">
+                                               <button class="btn dropdown-toggle" data-toggle="dropdown" >操作<span class="caret"></span></button>
+                                               <ul class="dropdown-menu">
+                                                   <li><a href="">编辑</a></li>
+                                                   <li><a href="">删除</a></li>
+                                                   <li><a href="">锁定</a></li>
+                                                   <li><a href="">修改密码</a></li>
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>2</td>
+                                           <td>李四</td>
+                                           <td>451515654@qq.com</td>
+                                           <td class="dropdown">
+                                               <button class="btn dropdown-toggle" data-toggle="dropdown" >操作<span class="caret"></span></button>
+                                               <ul class="dropdown-menu">
+                                                   <li><a href="">编辑</a></li>
+                                                   <li><a href="">删除</a></li>
+                                                   <li><a href="">锁定</a></li>
+                                                   <li><a href="">修改密码</a></li>
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       </tbody>
+                                   </table>
+
+                           </div>
+                           <div id="yhtab2" class="tab-pane " style="border: 1px solid red">
+                               2用户搜索
+                           </div>
+                           <div id="yhtab3" class="tab-pane ">
+                               3添加用户
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+    <!--内容管理分页-->
+    <div id="tabthree" class="tab-pane">
+        <br><br><br>3--内容管理分页，。。，。。。。，，，，，，
+    </div>
+    <!--标签管理分页-->
+    <div  id="标签" class="tab-pane">
+        <br><br><br>4---标签管理分页，。。，。。。。，，，，，，
+    </div>
+
+
+</div>
+</body>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/Chart.js"></script>
+<script>
+    $(function () {
+        $("#tb td:first-child").css("font-weight","bolder")
+        //jquery字体
+    })
+    /*生成画布的函数*/
+  /*  window.onload= function () {
+
+    }*/
+</script>
+<script src="js/htsy.js"></script>
+
+</html>

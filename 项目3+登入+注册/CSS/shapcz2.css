@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*顶部导航界面CSS*/
+.top{
+    height: 30px;
+    width: 100%;
+    /*border: 1px solid black;*/
+    background-color: rgba(245, 245, 245, 0.34);
+}
+.top a{
+    color: black;
+    text-decoration: none;
+}
+.top li{
+    float: left;
+    list-style: none;
+    margin: 5px;
+}
+.top>ul:first-child{
+    margin-left: 220px; ;
+}
+#top_1{
+    margin-right: 200px;
+}
+
+/*正文部分*/
+#mm{
+    width:1000px;
+    height: 1000px;
+    /*border: 1px solid black;*/
+    margin: 0px auto;
+}
+/*logo图片,搜索部分,插入背景图*/
+#mm_1{
+    width: 1000px;
+    height: 100px;
+    /*border: 1px solid black;*/
+    background: url("../img/7.png") no-repeat 0px 20px;
+}
+
+/*定位整个搜索框*/
+#mm_2{
+    position: absolute;
+    left: 600px;
+    top: 50px;
+    height: 100px;
+    width: 415px;
+
+}
+/*商品按钮*/
+#mm_2>input{
+    width: 50px;
+    height: 25px;
+    background-color:rgba(244, 106, 2, 0.8) ;
+    color: white;
+    outline: none;
+}
+/*搜索文本输入框*/
+#mm_2>div>:first-child{
+    border: none;
+    outline: none;
+    padding-left: 34px;
+}
+/*搜索按钮*/
+#mm_3>:nth-child(2){
+    background-color: rgba(244, 106, 2, 0.8);
+}
+/*输入框,和搜索按钮外边框*/
+#mm_3{
+    border: rgba(244, 106, 2, 0.8) 3px solid;
+    height: 25px;
+}
+
+
+
+/*所有商品导航栏*/
+#mm_4{
+    width: 1000px;
+    height: 35px;
+    border: 1px solid black;
+    background-color: rgba(244, 106, 2, 0.8);
+}
+#mm_4 li{
+    float: left;
+    list-style: none;
+    margin: 10px 7px;
+    /*border: 1px solid black;*/
+    border-left: 1px solid #cccccc;
+    border-color: rgba(93, 97, 97, 0.34);
+    height: 26px;
+    padding-left: 20px;
+}
+#mm_4 li>a{
+    color:white;
+    text-decoration: none;
+}
+#mm_4>ul>:first-child{
+    margin-right: 5px;
+    border-left: none;
+}
+/* #mm_4>ul>:nth-child(2){
+     background-color: rgba(255, 103, 2, 0.88);
+ }*/
+
+/*左侧导航*/
+#left{
+    margin-top: 10px;
+    width: 160px;
+    height: 500px;
+    border: solid 1px #b4d8f3;
+    float: left;
+}
+#left img{
+    margin: 30px;
+}
+.left_1>li{
+    list-style: inside;
+    /*border: 1px solid black;*/
+    height: 12px;
+    margin-top: 15px ;
+    list-style-image:url("../img/11.png") ;
+    margin-left: 20px; ;
+}
+
+
+
+/*右侧编辑地址栏整个边框*/
+#right{
+    width: 600px;
+    height: 500px;
+    /*border: 1px solid blue;*/
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+/*收货地址表单栏*/
+#right_1{
+    width: 450px;
+    height: 500px;
+}
+#right_1 li{
+    /* border: 1px solid black;*/
+    border-bottom: 1px solid #cccccc;
+    list-style: none;
+    height: 60px;
+    text-align: right;
+    padding-right: 170px;;
+    line-height: 60px;
+
+
+}
+/*保存修改按钮*/
+#right_1 input{
+    height: 30px;
+    size: 150px;
+}
+
+
+/*底部*/
+footer>div{
+    clear: left;
+    padding-left: 160px;
+    border-top: 1px dashed #cccccc;
+}
+footer li{
+    list-style: none;
+    float: left;
+    border-left: 1px solid black;
+    width: 120px;
+    text-align: center;
+    margin-top: 50px; ;
+
+}
+footer p{
+    margin-left: 100px;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+

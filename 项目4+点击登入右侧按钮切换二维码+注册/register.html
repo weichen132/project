@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="CSS/去哪儿网注册6.css" type="text/css" rel="stylesheet">
+    <script>
+        function change(){
+            document.getElementById("yanzhengma").src="https://user.qunar.com/captcha/api/image?k={en7mni(z&p=ucenter_login&c=ef7d278eca6d25aa6aec7272d57f0a9a&t=1497249183394"+new Date().getTime();
+        }
+        function tijiao(){
+           var in2= document.getElementById("in2").value;
+            var reg=/^1(3[0-9]|5([0-3]|[5-9])|8(0|[5-9]))\d{8}$/;
+            if(reg.test(in2)){
+                document.getElementById("jihuo").innerHTML="<span style='color: blueviolet'>手机号码正确</span>";
+            }else{
+                document.getElementById("jihuo").innerHTML="";
+                document.getElementById("jihuo").style.backgroundImage="url('img/QNEimage/jihuo.png')" ;
+                document.getElementById("jihuo").style.width="150px";
+            }
+
+        }
+    </script>
+</head>
+<body>
+<!--top界面-->
+<div id="top">
+    <ul>
+        <li><a href="login.html">登录</a></li>
+        <li><a href="register.html">注册</a></li>
+        <li>| <span style="color: red"><a href="index.html">去哪儿网首页</a></span> |</li>
+        <li>联系客服</li>
+    </ul>
+</div>
+<div id="log">
+    <a href="index.html"> <img src="img/QNEimage/logo.png" style="margin-top: 20px;margin-right: 5px"><h3 style="display: inline-block;font-weight: 100;">账号登录</h3></a>
+</div>
+
+<!--中间部分-->
+<div id="mid">
+    <!--左边部分-->
+    <div id="left">
+            <div id="left1">
+                <div id="left1_1"><label for="in1">国家</label></div>
+                <div id="left1_2"><input id="in1" type="text" placeholder="中国86">
+                    <div id="left1_3"><img src="img/QNEimage/zc1.png"></div>
+                </div>
+            </div>
+
+
+        <div id="left2">
+            <div id="left2_1"><label for="in2">手机号码</label></div>
+            <div id="left2_2"><input id="in2" type="text"  placeholder="请输入手机号码">
+
+            </div>
+            <div id="jihuo" style="font-size: 12px;height: 30px;line-height: 30px;width: 220px;float: right">可用于激活码获取、密码找回、订单查询</div>
+        </div>
+
+
+        <!--登入密码-->
+        <div id="left3">
+            <div id="left3_1"><label for="in3">登入密码</label></div>
+            <div id="left3_2"><input id="in3" type="text" placeholder="请输入登录密码" >
+
+            </div>
+        </div>
+
+
+        <!--验证码-->
+        <div id="right4" >
+         <span style="display: inline-block;float: left;margin-top: 5px;padding-right: 5px;color: #999">验证码</span><input id="input1" style="border-left: 1px solid #ccc;" type="text" placeholder="请输入验证码">
+            <div id="yanzheng" >
+                <img id="yanzhengma" onclick="change()" style="width: 85px;height: 32px" src="https://user.qunar.com/captcha/api/image?k={en7mni(z&p=ucenter_login&c=ef7d278eca6d25aa6aec7272d57f0a9a&t=1497249183394">
+            </div>
+        </div>
+        <a id="aaa" href="#" onclick="change()">换一张</a>
+
+
+
+
+        <!--插入的手机验证码-->
+        <div id="right3x">
+            <span style="display: inline-block;float: left;margin-top: 5px;padding-right: 5px;color: #999">激活码</span>
+            <input id="inp2x" style="border-left: 1px solid #ccc;" type="password" placeholder="请输入验证码">
+            <a href="#">获取验证码</a>
+        </div>
+
+
+        <!--三个月内自动登录-->
+        <div id="right5">
+            <input style="margin: 7px 5px" type="checkbox">我已阅读并同意遵守  <a href="#">《去哪儿用户服务协议》</a>
+        </div>
+
+
+        <!--登录按钮-->
+        <div id="right6" onclick="tijiao()">
+            <input type="button" value="同意协议并注册" onclick="tijiao()">使用 <a href="#">邮箱注册</a>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--右边部分-->
+    <div id="right">
+                <img src="img/QNEimage/right.png">
+    </div>
+</div>
+
+
+
+
+
+<!--网页尾部-->
+<div id="last">
+    <div>关于Qunar.com
+        |投资者关系|酒店加盟|业务合作|加入我们|"严重违规失信"专项整治举报|安全中心|星骆驼公益|About Us</div>
+    <div>Copyright ©2017 Qunar.com京公网安备110108901530京ICP备05021087号营业执照信息保险经纪资质(京)-非经营性-2016-0110<span id="span1">去哪儿网客服电话95117</span></div>
+    <div><img src="img/qneimage/footer_v10.png"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<!--后台导航部分 响应式导航栏-->
+<nav id="nav1" class="navbar navbar-default navbar-fixed-top " style="padding:0px 40px;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="" class="navbar-brand text-capitalize" style="font-size: 25px">maizi admin</a>
+        </div>
+
+        <div id="mynav" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class=""><a href="后台首页.html"  class="glyphicon glyphicon-home "> 后台首页</a></li>
+             <!--   <li ><a href="#tabtwo" data-toggle="tab" class="glyphicon glyphicon-user"> 用户管理</a></li>-->
+                <li ><a href="用户管理.html"  class="glyphicon glyphicon-user"> 用户管理</a></li>
+                <li class="active"><a href="#tabthree" data-toggle="tab" class="glyphicon glyphicon-list-alt"> 内容管理</a></li>
+                <li><a href="标签管理.html" class="glyphicon glyphicon-tag"> 标签管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li  class="dropdown ">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">admin <span class="caret"></span></a>
+                    <ul  class="dropdown-menu ">
+                        <li><a href="">个人主页</a></li>
+                        <li><a href="">设置</a></li>
+                        <li><a href="">关于</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="glyphicon glyphicon-off"> 退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid" style="margin-top: 70px">
+    <div class="row">
+        <div class="col-lg-2">
+            <ul class="nav nav-pills nav-stacked">
+                <li id="li2_1" class="active"><a href="#nr" data-toggle="tab">内容管理</a></li>
+                <li id="li1_1"><a href="#tjnr" data-toggle="tab" >添加内容</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-10">
+            <p class="lead" style="border-bottom: 1px solid black;padding-bottom: 10px;">内容管理</p>
+            <!--用户列表 ，用户搜索 ， 添加用户3分页-->
+            <ul class="nav nav-tabs">
+                <li class="active" id="li2" ><a href="#nr" data-toggle="tab">内容管理</a></li>
+                <li id="li1" class="" ><a href="#tjnr" data-toggle="tab" >添加内容</a></li>
+            </ul>
+
+
+            <div  class="tab-content">
+                <div id="nr" class="tab-pane active" style="height: 450px">
+                  <table class="table" id="formtitle">
+                      <thead>
+                          <tr>
+                              <th>文章标题</th>
+                              <th>作者</th>
+                              <th>发布时间</th>
+                              <th>操作</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>泛Mooc职业教育，效果和就业为王</td>
+                            <td>朱朝兵</td>
+                            <td>2017/1/1</td>
+                            <td class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">操作 <span class="caret"></span></button>
+                                <div class="dropdown-menu">
+                                    <li><a href="#">编辑</a></li>
+                                    <li><a href="#">删除</a></li>
+                                    <li><a href="#">全部置顶</a></li>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>产品经理常犯的7大错误，你照吗？</td>
+                            <td>李磊</td>
+                            <td>2017/6/20</td>
+                            <td class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">操作 <span class="caret"></span></button>
+                                <div class="dropdown-menu">
+                                    <li><a href="#">编辑</a></li>
+                                    <li><a href="#">删除</a></li>
+                                    <li><a href="#">全部置顶</a></li>
+                                </div>
+                            </td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </div>
+                <div id="tjnr" class="tab-pane">
+                    <from class="from">
+                        <div class="form-group">
+                            <lable for="">标题</lable>
+                            <input id="in1" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <lable for="">作者</lable>
+                            <input id="zuoze" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <lable for="">内容</lable>
+                            <textarea id="tx1" style="width: 100%;height: 280px"></textarea>
+                        </div>
+                        <div class="checkbox pull-left" >
+                            <label>
+                                <input type="checkbox">全部置顶
+                            </label>
+                        </div>
+                        <button id="fb" type="submit" class="btn btn-default pull-right" style="padding: 5px 30px">发表</button>
+                    </from>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--点击编辑的时候，出现编辑模态框-->
+<div class="modal" id="modal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  text-center bg-primary" style="font-size: 30px;font-weight: 900">-------编辑修改栏-------<button class="close " data-dismiss="modal">&times;</button></div>
+            <div class="modal-body">
+                <form action="" class="form">
+                    <div class="form-group">
+                        <lable for="" style="color: blueviolet;font-size: 25px;">标题</lable>
+                        <input id="biaoti" type="text" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <lable for=""  style="color: blueviolet;font-size: 25px ;">作者</lable>
+                        <input id="zuoZhe" type="text" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <lable for=""  style="color: blueviolet;font-size: 25px; ">内容</lable>
+                        <textarea id="neirong" style="width: 100%;height: 150px"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button class="btn btn-primary" id="tianjiao5" data-dismiss="modal"> 提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--删除警告模态框-->
+<div class="modal fade" id="shanchu">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header btn-danger">
+                <span style="font-size: 30px;font-weight: 900">提示</span>
+                <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4 >确定要删除该资源？删除后不可恢复！</h4>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger"  data-dismiss="modal" id="baochun">保存</button>
+                <button class="btn btn-default" data-dismiss="modal"  id="quxiao">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--修改成功的模态框-->
+<div class="modal fade" id="chengong">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header btn-success">
+                <span style="font-size: 30px;font-weight: 900">提示</span>
+                <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4 >修改成功！</h4>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger"  data-dismiss="modal" id="qd">确定</button>
+                <!--<button class="btn btn-default" data-dismiss="modal"  id="qx">取消</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--发表成功模态框-->
+<div class="modal fade" id="fbcg">
+    <div class="modal-dialog" style="margin-top: 200px">
+        <div class="modal-content">
+            <div class="modal-header btn-success">
+                <span style="font-size: 30px;font-weight: 900">提示</span>
+                <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4 >恭喜你,发表成功！</h4>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success"  data-dismiss="modal" >确定</button>
+                <!--<button class="btn btn-default" data-dismiss="modal"  id="qx">取消</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--结尾-->
+<div id="jiewei" class="text-center container-fluid"  style="margin-bottom: 0px" >
+    <ul class="pagination pull-right">
+        <li><a href="#">&laquo;</a></li>
+        <li  class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+    <p style="margin: 80px auto;">Copyright ©360.cn. All Rights Reserved.</p>
+</div>
+<!--输入标题和内容的模态框提示-->
+<div class="modal fade" id="m1" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header btn-danger" style="font-size: 30px;font-weight: 900">提示
+                <button class="close" data-dismiss="modal">&times;</button></div>
+            <div class="modal-body" style="font-size: 20px">请输入有效的标题和内容！</div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+    /*点击发表的时候，添加内容*/
+    $(function () {
+        /*点击发表的时候，将标题和内容同时存储到localstrong中*/
+        var nowNum;
+        var num;
+        nowNum=window.localStorage.getItem("number")||0;
+        $("#fb").click(function () {
+            if($("#in1").val()==""||$("#tx1").val()==""||$("#zuoze").val()==""){
+                $("#m1").modal("show");
+            }else{
+                    var date = new Date();
+                    var year = date.getFullYear();
+                    var month = date.getMonth() + 1;
+                    var day=date.getDate();
+                    var hour = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
+                    var minute = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+                    var second = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+                    var currentTime = year + "年" + month + "月" + day + "日" + hour + ":" + minute + ":" + second;
+                    /*alert(currentTime);*/
+                window.localStorage.setItem("title"+nowNum,$("#in1").val());
+                window.localStorage.setItem("text"+nowNum,$("#tx1").val());
+                window.localStorage.setItem("zz"+nowNum,$("#zuoze").val());
+                window.localStorage.setItem("time"+nowNum,currentTime);
+                /*把当前的找出来*/
+                var tt=window.localStorage.getItem("title"+nowNum);
+                var zz=window.localStorage.getItem("zz"+nowNum);
+                var time=window.localStorage.getItem("time"+nowNum);
+                var btt="<td  class='dropdown'> <button class='btn btn-default dropdown-toggle' data-toggle='dropdown'>操作 <span class='caret'></span></button> <div class='dropdown-menu'> <li><a href='#' id='bj"+nowNum+"'>编辑</a></li> <li><a href='#' id='sc"+nowNum+"'>删除</a></li> <li><a href=''>全部置顶</a></li> </div> </td>"
+                var str="<tr id='tr"+nowNum+"'><td >"+tt+"</td><td>"+zz+"</td><td>"+time+"</td>"+btt+"</tr>";
+                $("#formtitle").append(str);
+                nowNum++;
+                window.localStorage.setItem("number",nowNum);
+                //show();//这里把前面的又找出来，添加了一遍
+                /*点击编辑的时候，编辑标题和内容  和点击删除的时候，删除的方法*/
+                /* var tt=window.localStorage.getItem("title0");
+                 window.localStorage.setItem("title0","水浒传")
+                 将数据存到localstrong的同时，每个编辑标签都给了id='bj"+nowNum+"'
+                 */
+                for(var k=0;k<nowNum;k++){
+                    $("#bj"+k+"").click(function () {//确定是哪一行点击了编辑
+                        var id=$(this).attr("id");//把字符串里面的数字取出来
+                        num=id.substring(2);//字符串进行剪切，把数字取出来
+                        //alert(num)
+                        var tt=window.localStorage.getItem("title"+num);
+                        var text=window.localStorage.getItem("text"+num);
+                        var zz=window.localStorage.getItem("zz"+num);
+                        var time=window.localStorage.getItem("time"+num);
+                        //alert(tt+","+text+","+zz+","+time)
+                        /*出现编辑的模态框*/
+                        $("#modal1").modal("show");
+                        $("#biaoti").val(tt);
+                        $("#zuoZhe").val(zz);
+                        $("#neirong").val(text);
+                        /*var tt=window.localStorage.getItem("title"+0);
+                         alert(tt)*/
+
+                        /*点击模态框中的提交按钮的时候，对localstrong和id=nr的表单内容同时修改*/
+                        $("#tianjiao5").click(function () {
+                            var xgbt=$("#biaoti").val();
+                            //alert(xgbt)
+                            var xgzz=$("#zuoZhe").val();
+                            var xgnr=$("#neirong").val();
+                            /*找到td的id*/
+                            //alert(num)
+                            $("#tr"+num+" td").eq(0).text(xgbt);
+                            $("#tr"+num+" td").eq(1).text(xgzz);
+                            window.localStorage.setItem("title"+num,xgbt)
+                            window.localStorage.setItem("zz"+num,xgzz)
+                            /*跳出修改成功的模态框*/
+                            $("#chengong").modal("show");
+
+                        })
+                    })
+                    //点击删除的方法
+                    $("#sc"+k+"").click(function () {
+                        var id=$(this).attr("id");
+                        var s=id.substring(2);
+                        /*alert(s)*/
+                        /*出现删除警告模态框*/
+                        $("#shanchu").modal("show");
+                        $("#baochun").click(function () {
+                            $("#tr"+s).remove();
+                            window.localStorage.removeItem("title"+s)
+                            window.localStorage.removeItem("zz"+s)
+                            window.localStorage.removeItem("time"+s)
+                            window.localStorage.removeItem("text"+s)
+                            window.localStorage.removeItem("number"+s)
+                        })
+
+
+                    })
+                }
+                /*提示发表成功模态框*/
+                $("#fbcg").modal("show");
+            }
+        })
+        /*页面加载的时候，将标题从localstroage中取出，如果localstrong里面被删除项不取出来，放到内容表中*/
+        function show(){
+            for(var j=0;j<nowNum;j++){
+                var tt=window.localStorage.getItem("title"+j);
+                var zz=window.localStorage.getItem("zz"+j);
+                var time=window.localStorage.getItem("time"+j);
+                if(tt){//判断tt存在的时候 ，在从localstrong中取出来显示出来，因为tt有可能已经被删除了
+                    var btt="<td  class='dropdown'> <button class='btn btn-default dropdown-toggle' data-toggle='dropdown'>操作 <span class='caret'></span></button> <div class='dropdown-menu'> <li><a href='#'  id='bj"+j+"'>编辑</a></li> <li><a href='#' id='sc"+j+"'>删除</a></li> <li><a href='#'>全部置顶</a></li> </div> </td>"
+                    var str="<tr  id='tr"+j+"'><td>"+tt+"</td><td>"+zz+"</td><td>"+time+"</td>"+btt+"</tr>";
+                    $("#formtitle").append(str);
+                }
+
+            }
+        }
+        show()
+        /*页面加载时候。同时绑定，编辑删除功能,与上面的一样*/
+        for(var k=0;k<nowNum;k++){
+            $("#bj"+k+"").click(function () {//编辑
+                var id=$(this).attr("id");//把字符串里面的数字取出来
+                num=id.substring(2);//字符串进行剪切，把数字取出来
+                //alert(num)
+                var tt=window.localStorage.getItem("title"+num);
+                var text=window.localStorage.getItem("text"+num);
+                var zz=window.localStorage.getItem("zz"+num);
+                var time=window.localStorage.getItem("time"+num);
+                //alert(tt+","+text+","+zz+","+time)
+                /*出现编辑的模态框*/
+                $("#modal1").modal("show");
+                $("#biaoti").val(tt);
+                $("#zuoZhe").val(zz);
+                $("#neirong").val(text);
+                /*var tt=window.localStorage.getItem("title"+0);
+                 alert(tt)*/
+
+                /*点击模态框中的提交按钮的时候，对localstrong和id=nr的表单内容同时修改*/
+                $("#tianjiao5").click(function () {
+                    var xgbt=$("#biaoti").val();
+                    //alert(xgbt)
+                    var xgzz=$("#zuoZhe").val();
+                    var xgnr=$("#neirong").val();
+                    /*找到td的id*/
+                    //alert(num)
+                    $("#tr"+num+" td").eq(0).text(xgbt);
+                    $("#tr"+num+" td").eq(1).text(xgzz);
+                    window.localStorage.setItem("title"+num,xgbt)
+                    window.localStorage.setItem("zz"+num,xgzz)
+                    /*跳出修改成功的模态框*/
+                    $("#chengong").modal("show");
+                })
+            })
+            //删除
+            $("#sc"+k+"").click(function () {
+                var id=$(this).attr("id");
+                var s=id.substring(2);
+                /*alert(s)*/
+                /*出现删除警告模态框*/
+                $("#shanchu").modal("show");
+                $("#baochun").click(function () {
+                    $("#tr"+s).remove();
+                    window.localStorage.removeItem("title"+s)
+                    window.localStorage.removeItem("zz"+s)
+                    window.localStorage.removeItem("time"+s)
+                    window.localStorage.removeItem("text"+s)
+                    window.localStorage.removeItem("number"+s)
+                })
+
+
+            })
+        }
+
+        /*修改模态框获取焦点的时候内容消失*/
+        $("#modal1 input").focus(function () {
+            $(this).val("");
+        })
+        $("#modal1 textarea").focus(function () {
+            $(this).val("");
+        })
+        /*点击添加内容按键，同时切换按钮*/
+        $("#li1").click(function () {
+            $("#li1_1").attr("class","active")
+            $("#li2_1").attr("class","")
+        })
+        $("#li2").click(function () {
+            $("#li1_1").attr("class","")
+            $("#li2_1").attr("class","active")
+        })
+        $("#li1_1").click(function () {
+            $("#li1").attr("class","active")
+            $("#li2").attr("class","")
+        })
+        $("#li2_1").click(function () {
+            $("#li2").attr("class","active")
+            $("#li1").attr("class","")
+        })
+
+       /* /!*点击编辑的时候，编辑标题和内容*!/
+       /!* var tt=window.localStorage.getItem("title0");
+        window.localStorage.setItem("title0","水浒传")
+        将数据存到localstrong的同时，每个编辑标签都给了id='bj"+nowNum+"'
+        *!/
+        var num
+       for(var k=0;k<nowNum;k++){
+           $("#bj"+k+"").click(function () {
+               var id=$(this).attr("id");//把字符串里面的数字取出来
+               num=id.substring(2);//字符串进行剪切，把数字取出来
+                alert(num)
+               var tt=window.localStorage.getItem("title"+num);
+               var text=window.localStorage.getItem("text"+num);
+               var zz=window.localStorage.getItem("zz"+num);
+               var time=window.localStorage.getItem("time"+num);
+               //alert(tt+","+text+","+zz+","+time)
+                /!*出现编辑的模态框*!/
+               $("#modal1").modal("show");
+               $("#biaoti").val(tt);
+               $("#zuoZhe").val(zz);
+               $("#neirong").val(text);
+              /!*var tt=window.localStorage.getItem("title"+0);
+               alert(tt)*!/
+
+               /!*点击模态框中的提交按钮的时候，对localstrong和id=nr的表单内容同时修改*!/
+               $("#tianjiao5").click(function () {
+                   var xgbt=$("#biaoti").val();
+                   //alert(xgbt)
+                   var xgzz=$("#zuoZhe").val();
+                   var xgnr=$("#neirong").val();
+                   /!*找到td的id*!/
+                   //alert(num)
+                 $("#tr"+num+" td").eq(0).text(xgbt);
+                   $("#tr"+num+" td").eq(1).text(xgzz);
+                   window.localStorage.setItem("title"+num,xgbt)
+                   window.localStorage.setItem("zz"+num,xgzz)
+
+               })
+           })
+       }*/
+    })
+</script>
+</html>

@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#topnav{
+    width: 100%;
+    height: 65px;
+    /*border: 1px solid black;*/
+}
+#logo{
+    width: 136px;
+    height: 58px;
+    /*border: 1px solid black;*/
+    background: url("../img/mafengwo/header-sprites13.png") no-repeat 0px 15px;
+    margin-left: 280px;
+    float: left;
+}
+#topnav_2{
+    float: left;
+    width: 600px;
+    height: 58px;
+   /* border: 1px solid  black;*/
+    margin-left: 20px;
+
+}
+
+#topnav_2>ul>li{
+    float: left;
+    list-style: none;
+    /*
+    border: 1px solid black;
+    */
+    font-family:微软雅黑 ;
+    font-size: 16px;
+}
+#topnav_2>ul>li:first-child{
+    background-color: #ff9d00;
+
+}
+#topnav_2>ul>li>a{
+    display: block;
+    height: 58px;
+    line-height: 58px;
+    padding: 0 16px;
+    text-decoration: none;
+    color: black;
+
+}
+#topnav_2>ul>li>a:hover{
+    color: #ff9d00;
+    border-bottom: 2px solid  #ff9d00 ;
+}
+#topnav_2>ul>li>span{
+    display: inline-block;
+    width: 100px ;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+}
+.icon-caret-down {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 4px solid #666;
+    border-left: 4px dashed transparent;
+    border-right: 4px dashed transparent;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+#topnav_3>ul{
+    position: relative;
+    text-align: left;
+    list-style: none;
+    border: 1px solid #cccccc;
+    border-left: none;
+    border-top: none;
+    width: 140px;
+    display: none;
+    background-color: white;
+
+}
+#topnav_3>ul>li{
+    height: 35px;
+}
+.i-hot{
+    position: absolute;
+    margin: 12px 0 0 8px;
+    height: 14px;
+    background-color: #f46240;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0 4px 0 3px;
+    font-style: normal;
+}
+.i-new{
+    margin-top: 12px;
+    position: absolute;
+    margin: 4px 0 0 8px;
+    height: 14px;
+    background-color: green;
+    color: #fff;
+    font-size: 12px;
+    line-height: 13px;
+    padding: 0 4px 0 3px;
+    font-style: normal;
+}
+#topnav_3:hover >ul{
+    display: block;
+
+}
+#topnav_3:hover{
+    border-top: 2px solid  #ff9d00;
+    border-left:1px solid #cccccc ;
+    /*border-right:1px solid #cccccc ;*/
+    color: #ff9d00;
+}
+#topnav_3 a{
+    display: inline-block;
+    height: 35px;
+    width: 130px;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+}
+#topnav_3 a:hover{
+    background-color: #cccccc;
+}
+
+#topnav_4{
+    border-right: 1px solid #cccccc;
+    border-bottom:1px solid #cccccc ;
+    border-left:1px solid #cccccc  ;
+    width: 300px;
+    height: 250px;
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+#topnav_4_1,#topnav_4_2{
+    float: left;
+}
+#topnav_4_1>ul,#topnav_4_2>ul{
+    list-style: none;
+}
+#topnav_4_2>ul{
+    margin-top: 20px;
+}
+#topnav_4_1>ul>li{
+   margin-top: 30px;
+   margin-left: 30px;
+}
+#topnav_4_2>ul>li{
+    margin-top: 8px;
+    margin-left: 50px;
+}
+#topnav_4_3:hover #topnav_4{
+    display: block;
+}
+
+#topnav_4_3:hover{
+    border-top: 2px solid #ff9d00;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+#topnav_4_3 a{
+    color:black ;
+    text-decoration: none;
+}
+#topnav_4_3 a:hover{
+    color:#ff9d00 ;
+}
+/*小图标*/
+#topnav_5{
+    float: left;
+   /* border: 1px solid black;*/
+    height: 58px;
+}
+#topnav_5 a{
+    color: #ff9d00;
+    text-decoration: none;
+}
+#topnav_5 a:hover{
+    text-decoration:underline;
+}
+#topnav_5_1 {
+    width: 28px;
+    height: 28px;
+    /*border: 1px solid black;*/
+    background: url("../img/mafengwo/header-sprites13.png") 0 -50px;
+    margin: 15px 10px 0px 0px;
+}
+#topnav_5_1:hover{
+    background: url("../img/mafengwo/header-sprites13.png") 0 -80px;
+
+}
+#topnav_5_2{
+    width: 28px;height: 28px;
+    /*border: 1px solid black;*/
+    background: url("../img/mafengwo/header-sprites13.png") -29px -50px;
+    margin:15px 10px 0px 0px;
+}
+#topnav_5_2:hover{
+    background: url("../img/mafengwo/header-sprites13.png") -29px -80px;
+}
+#topnav_5_3{
+   width: 28px;height: 28px;
+    /*border: 1px solid black;*/
+    background: url("../img/mafengwo/header-sprites13.png") 0 -165px;
+    margin:15px 10px 0px 0px;
+}
+#topnav_5_3:hover{
+    background: url("../img/mafengwo/header-sprites13.png") -30px -165px;
+}
+/*轮播图片*/
+#picture{
+    width: 1580px;
+    height: 455px;
+    border: 1px solid black;
+    clear: both;
+
+}
+#picture img{
+     width: 1580px;
+    height: 455px;
+}

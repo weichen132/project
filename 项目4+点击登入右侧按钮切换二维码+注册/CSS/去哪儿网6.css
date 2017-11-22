@@ -1,0 +1,2123 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+/*网站头部导航栏*/
+#top{
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+    width:1250px;
+    height: 100px;
+}
+#top1{
+   /* border: 1px solid black;*/
+    width: 688px;
+    height: 20px;
+    float: right;
+    font: normal 12px/1.5 tahoma,arial,sans-serif;
+
+}
+#top1>ul{
+    margin-top:4px ;
+    float: right;
+}
+
+#top1>ul li:not(#l1) a{/*伪类选择器，除了第一个标签li里面超链接，因为我要把后面超链接的字变成黑色*/
+    text-decoration: none;
+    color: black;
+}
+#top1>ul li:not(#l1) a:hover{
+    color: #1d94ff;
+}
+#l1>a{
+    text-decoration: none;
+}
+#l1>a:hover{
+    color: #1d94ff;
+}
+
+#top1>ul>li{
+    /*border: 1px solid black;*/
+    border-right: 1px solid #cccccc ;
+   float: left;
+    list-style: none;
+    font-family: tahoma,arial,sans-serif;
+    font-size: 10px;
+    height: 14px;
+    line-height: 14px;
+    /*display: inline;*/
+    padding: 0 11px 0 10px;
+}
+#spa1{
+    background: url("../img/QNEimage/header_v13.png") -30px -153px no-repeat;;
+    width: 11px;
+    height: 8px;
+    /*border: 1px solid black;*/
+    display: inline-block;
+    overflow-x: hidden;
+    margin-right: 5px;
+}
+#spa2{
+    background: url("../img/QNEimage/header_new_v7.png") -153px -20px no-repeat;
+    width: 6px;
+    height: 6px;
+    position: relative;
+    left: 4px;
+    /*margin-left: 6px;*/
+    display: inline-block;
+  /*  border: 1px solid black;*/
+}
+#spa3{
+    background: url("../img/QNEimage/header_new_v7.png") -153px -42px no-repeat;
+    width: 6px;
+    height: 15px;
+    position: relative;
+    /*left: 4px;*/
+    /*margin-left: 6px;*/
+    display: inline-block;
+      /*border: 1px solid black;*/
+}
+#spa4{
+    width: 19px;
+    height: 13px;
+    border: 1px solid black;
+    display: inline-block;
+    background: url("../img/QNEimage/ico_en_v1.png") no-repeat;
+}
+#spa3:hover{
+    background: url("../img/QNEimage/header_new_v7.png") -153px -32px no-repeat;
+}
+#spa3:hover #top_ul{/*span小图标的后面一个兄弟，当悬浮在span小图标的时候，选中后面的列表*/
+    display: block;
+    border-left:1px solid #cccccc ;
+    border-right:1px solid #cccccc  ;
+    border-right:1px solid #cccccc  ;
+    border-bottom: 1px solid #cccccc ;
+}
+
+#top_ul{
+    display: none;
+    list-style: none;
+    /*border: 1px solid black;*/
+    width: 82px;
+    position: relative;
+    top: 15px;
+    left: -62px;
+    background-color: white;
+    z-index: 10;
+}
+#top_ul li{
+    /*border: 1px solid black;*/
+    height: 25px;
+    line-height: 25px;
+    background: white;
+    text-align: left;
+    padding-left: 10px;
+}
+#top_ul li:hover{
+    background-color: #2786df;
+    color: white;
+}
+
+/*网站第二个导航栏*/
+#top2{
+    clear: both;
+   /* border: 1px solid red;*/
+    width: 1250px;
+    height: 80px;
+}
+#top2>div{
+    float: left;
+    height: 54px;
+    /*border: 1px solid black;*/
+}
+#top2_u1{
+   /* display: flex;
+    justify-content: space-around;!*子容器平均分布,剩余的空间(两边会留空,)*!
+    align-self:flex-start;*/
+    margin-top: 30px;
+    width: 1010px;
+   font-weight:600 ;
+    font-family: "Hiragino Sans GB W3","Microsoft Yahei",\5b8b\4f53;
+}
+#top2_u1>li{
+    margin: 0px 10px;
+    float: left;
+    list-style: none;
+    border: 1px solid white;
+    position: relative;
+}
+#top2_spa{
+    display: inline-block;
+/*    border: 1px solid black;*/
+    width: 6px;
+    height: 6px;
+    background: url("../img/QNEimage/header_new_v7.png") -153px -20px no-repeat;
+    margin: 0px 5px;
+
+}
+#top2_di1{
+    clear: both;
+    border: 1px solid #cccccc;
+    width: 240px;
+    height: 52px;
+    display: none;
+    background: white;
+    position: relative;
+    left: -80px;
+    top: 0px;
+    z-index: -10;
+
+}
+#top2_u2>li{
+    float: left;
+    list-style: none;
+    margin: 10px 5px;
+    padding: 0 5px;
+    font-size: 14px;
+    width: 58px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+
+}
+#top2_u2>li:hover{
+    background-color: rgba(0, 175, 255, 0.23);
+}
+#ll1:hover #top2_di1{
+    display: block;
+
+}
+#ll1:hover{
+    border-left: 1px solid #cccccc ;
+    border-right: 1px solid #cccccc;
+}
+
+#top2_di2{
+    border: 1px solid #cccccc;
+    width: 620px;
+    height: 52px;
+    position: relative;
+    top: -4px;
+    left: -80px;
+    background: white;
+    z-index: 1;
+}
+#top2_di2>ul{
+    margin-left:20px;
+}
+#top2_di2>ul>li{
+    float: left;
+    list-style: none;
+  /*  border: 1px solid black;*/
+    margin: 10px 6px;
+    padding: 3px 2px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+#top2_di2>ul>li:hover{
+    background-color: rgba(0, 175, 255, 0.23);
+}
+
+#top2_di2{
+    display: none;
+}
+#l2:hover>#top2_di2{
+    display: block;
+}
+
+#l2:hover{
+    border-left: 1px solid #cccccc ;
+    border-right: 1px solid #cccccc;
+}
+#top2 a{
+    color: black;
+    text-decoration: none;
+
+}
+#top2 a:hover{
+    color: #02afc7
+}
+.qhf_hot1{
+   /* border: 1px solid black;*/
+    font-size: 0;
+    position: absolute;
+   /* right: 4px;
+    top: 10px;*/
+    width: 9px;
+    height: 9px;
+    line-height: 0;
+    background: url(../img/QNEimage/header_new_v7.png) no-repeat -151px 0;
+}
+.qhf_hot2{
+    /*border: 1px solid black;*/
+    font-size: 0;
+    position: absolute;
+  /*  right: 4px;
+    top: 10px;*/
+    width: 9px;
+    height: 9px;
+    line-height: 0;
+    background: url(../img/QNEimage/header_new_v7.png) no-repeat -151px 0;
+}
+.qhf_hot3{
+    /*border: 1px solid black;*/
+    font-size: 0;
+    position: absolute;
+    /*  right: 4px;
+      top: 10px;*/
+    width: 9px;
+    height: 9px;
+    line-height: 0;
+    background: url(../img/QNEimage/header_new_v7.png) no-repeat -151px -9px;
+}
+.qhf_hot4{
+    /*border: 1px solid black;*/
+    font-size: 0;
+    position: absolute;
+    /*  right: 4px;
+      top: 10px;*/
+    width: 9px;
+    height: 9px;
+    line-height: 0;
+    background: url(../img/QNEimage/header_new_v7.png) no-repeat -151px -9px;
+}
+
+
+#top2_di3{
+    width: 250px;
+    border: 1px solid #cccccc;
+    height: 50px;
+    position: relative;
+    top: 1px;
+    left: -50px;
+    background: white;
+}
+#top2_di3>ul>li{
+    float: left;
+    list-style: none;
+    /*border: 1px solid #cccccc;*/
+    margin: 8px 6px;
+    padding: 3px 2px;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+}
+
+#l3:hover >#top2_di3{
+    display: block;
+}
+#top2_di3{
+    display: none;
+}
+#top2_di3>ul>li:hover{
+    background-color: rgba(0, 175, 255, 0.23);
+}
+#l3:hover{
+    border-left: 1px solid #cccccc ;
+    border-right: 1px solid #cccccc;
+}
+
+
+
+#top2_di4{
+    width: 500px;
+    border: 1px solid #cccccc;
+    height: 50px;
+    position: relative;
+    top: 2px;
+    left: -150px;
+    background: white;
+}
+#top2_di4>ul>li{
+    float: left;
+    list-style: none;
+    /*border: 1px solid #cccccc;*/
+    margin: 8px 6px;
+    padding: 3px 2px;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+}
+
+#l4:hover >#top2_di4{
+    display: block;
+}
+#top2_di4{
+    display: none;
+}
+#top2_di4>ul>li:hover{
+    background-color: rgba(0, 175, 255, 0.23);
+}
+#l4:hover{
+    border-left: 1px solid #cccccc ;
+    border-right: 1px solid #cccccc;
+}
+
+/*第二部分，查询栏*/
+#cx{
+   /* border: 1px solid black;*/
+    margin: 20px auto;
+    width: 1250px ;
+    height: 320px;
+}
+#cx1{
+    border: 1px solid black;
+    width: 670px;
+    height: 320px;
+    background-color: #00afc7;
+
+}
+#cx2{/*广告栏图片*/
+   /* border: 1px solid red;
+    width: 550px;
+    height: 300px;*/
+}
+#cx1{
+    float: left;
+}
+#cx2{
+    float: right;
+}
+/*把第一个页面的部分隐藏掉，点击国内。澳门的时候在显示*/
+#span3{
+    margin-right: 70px;
+    float: right;
+    display: none;
+}
+#cx1_left{
+   /* border: 1px solid black;*/
+    margin: 5px;
+    width: 72px;
+    height: 308px;
+    position: relative;
+}
+#cx1_left>ul>li{
+    /*border: 1px solid black;*/
+    list-style: none;
+    height: 36px;
+}
+.new{
+    background: url(../img/QNEimage/new.gif) no-repeat 0 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 13px;
+    height: 15px;
+    position: absolute;
+    right: 3px;
+    top: 260px;
+}
+.new1{
+    background: url(../img/QNEimage/new.gif) no-repeat 0 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 13px;
+    height: 15px;
+    position: absolute;
+    right: -8px;
+    top: -10px;
+}
+#cx1_left a{
+    display: inline-block;
+   /* border: 1px solid black;*/
+    width: 73px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    text-decoration: none;
+    color: white;
+}
+#cx1_left a:hover{
+    background-color: white;
+    color: #02afc7;
+}
+/*右边输出栏*/
+#cx1_left2{
+    width: 587px;
+    height: 308px;
+    /*
+    border: 1px solid black;
+    */
+    margin: 5px -5px;
+    background-color: white;
+}
+#cx1_left,#cx1_left2{
+    float: left;
+}
+#title2,#title3,#title4,#title5,#title6,#title7,#title8{
+    display: none;
+}
+/*输出栏，第一个页面*/
+#title1_1{
+    /*
+    border: 1px solid black;
+    */
+    width: 558px;
+    height: 31px;
+    margin-top: 10px;
+
+}
+#title1_1>ul>li{
+    list-style: none;
+    float: left;
+    margin: 5px 20px;
+
+}
+#title1_1>ul a{
+    text-decoration: none;
+    color: black;
+}
+#title1_2{
+    float: right;
+}
+#title1_2>a:first-child{
+    display: inline-block;
+    /*border: 1px solid black;*/
+    width: 130px;
+    background: url(//simg4.qunarzz.com/home/home_v5.png) no-repeat -282px -28px;
+    text-indent: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 5px; ;
+}
+#title1_2>a:last-child{
+    display: inline-block;
+   /* border: 1px solid black;*/
+    width: 100px;
+    background: url(//simg4.qunarzz.com/home/home_v5.png) no-repeat -282px -1px;
+    text-indent: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 5px; ;
+}
+#title1_3{
+     clear: both;
+    /* border: 1px solid black;*/
+     width: 558px;
+     height: 213px;
+    background-color: rgba(244, 251, 252, 0.56);
+ }
+#title1_4{
+    clear: both;
+    border: 1px solid red;
+    width: 558px;
+    height: 213px;
+  /*  background-color: rgba(244, 251, 252, 0.56);*/
+}
+
+#title1_4{
+    display: none;
+}
+
+/*第一个页面的四个输入框*/
+#input1{
+    /*border: 1px solid black;*/
+    width: 510px;
+    height: 104px;
+    margin-top: 10px;
+    position: relative;
+}
+#input2{
+    /*border: 1px solid red;*/
+    width: 224px;
+    height: 104px;
+    float: left;
+}
+
+#input3{
+   /* border: 1px solid black;*/
+    width: 224px;
+    height: 104px;
+    float: right;
+}
+#input2_1{
+    border: 1px solid #cccccc;
+    width: 224px;
+    height: 37px;
+    position: relative;
+    background: white;
+}
+.chufa{
+    position: absolute;
+    top: 12px;
+    line-height: 12px;
+    padding: 0 4px 0 4px;
+    font-size: 12px;
+    text-align: right;
+    color: #999;
+
+}
+.riqi{
+    width: 24px;
+    height: 15px;
+   /* border: 1px solid black;*/
+    position: absolute;
+    right: 3px;
+    top: 10px;
+}
+.riqi b{
+    /*border: 1px solid black;*/
+    float: right;
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background: url("../img/QNEimage/i_qbox.png") 2px 1px no-repeat;
+}
+/*隐藏的城市列表*/
+#yc1{
+   /* border: 1px solid black;*/
+    width: 500px;
+    height: 205px;
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+#lala{
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 11px;
+    height: 11px;
+    background: url(../img/QNEimage/i_qbox.png) no-repeat scroll -85px -20px;
+}
+
+#yc2{
+    border: 1px solid #cccccc;
+    border-bottom:none ;
+    width: 500px;
+    height: 35px;
+    background: #f0fafc;
+}
+#yc2 a{
+    text-decoration: none;
+    color: black;
+}
+#yc2 a:hover{
+    color: #28b3d4;
+}
+
+#yc2>ul>li{
+    float: left;
+    list-style: none;
+    /*border: 1px solid black;*/
+    margin: 6px 6px 0px 6px;
+    font-size: 14px;
+    height: 27px;
+}
+.i1{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+   top: 33px;
+    left: 38px;
+    margin-left: -3px;
+    background: #28b3d4;
+    width: 6px;
+    height: 2px;
+}
+.i2{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    top: 31px;
+    left: 40px;
+    margin-left: -3px;
+    background: #28b3d4;
+    width: 2px;
+    height: 2px;
+}
+#a0{
+    border-bottom: 1px solid #02afc7;
+}
+#yc3{
+   /* border: 1px solid red;*/
+    width: 500px;
+    height: 150px;
+    background: white;
+    border: 1px solid #cccccc;
+    border-top:none ;
+}
+/*#yc6,#yc7,#yc8,#yc9{
+    border: 1px solid red;
+    width: 500px;
+    height: 150px;
+    background: white;
+    display: none;
+}*/
+#yc4,#yc5,#yc6,#yc7,#yc8,#yc9{
+    border: 1px solid #cccccc;
+    border-top:none ;
+    width: 500px;
+    height: 270px;
+    background: white;
+    display: none;
+}
+#yc3 ul{
+    /*
+    border: 1px solid black ;
+    */
+    float: left;
+    margin: 10px 0px ;
+}
+#yc3 ul li{
+    list-style: none;
+    margin: 0px 0px;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+}
+#yc3 ul li:hover{
+    background-color: #02afc7;
+}
+#yc3 ul li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+}
+#yc3 ul li a:hover{
+    color: white;
+}
+
+
+
+#yc4 ul{
+  /*  border: 1px solid black ;*/
+    float: left;
+    margin: 10px 0px ;
+}
+#yc4 ul li{
+    list-style: none;
+    margin: 0px 0px;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+}
+#yc4 ul li>a:hover{
+    background-color: #02afc7;
+}
+#yc4 ul li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+}
+#yc4 ul li a:hover{
+    color: white;
+}
+
+
+
+
+#yc5 ul{
+    /*  border: 1px solid black ;*/
+    float: left;
+    margin: 10px 0px ;
+}
+#yc5 ul li{
+    list-style: none;
+    margin: 0px 0px;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+}
+#yc5 ul li>a:hover{
+    background-color: #02afc7;
+}
+#yc5 ul li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+}
+#yc5 ul li a:hover{
+    color: white;
+}
+
+
+
+
+#yc6 ul{
+    /*  border: 1px solid black ;*/
+    float: left;
+    margin: 10px 0px ;
+}
+#yc6 ul li{
+    list-style: none;
+    margin: 0px 0px;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+}
+#yc6 ul li>a:hover{
+    background-color: #02afc7;
+}
+#yc6 ul li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+}
+#yc6 ul li a:hover{
+    color: white;
+}
+
+
+
+
+
+#yc7 ul{
+    /*  border: 1px solid black ;*/
+    float: left;
+    margin: 10px 0px ;
+}
+#yc7 ul li{
+    list-style: none;
+    margin: 0px 0px;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+}
+#yc7 ul li>a:hover{
+    background-color: #02afc7;
+}
+#yc7 ul li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+}
+#yc7 ul li a:hover{
+    color: white;
+}
+
+
+
+#yc8 ul{
+    /*  border: 1px solid black ;*/
+    float: left;
+    margin: 10px 0px ;
+}
+#yc8 ul li{
+    list-style: none;
+    margin: 0px 0px;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+}
+#yc8 ul li>a:hover{
+    background-color: #02afc7;
+}
+#yc8 ul li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+}
+#yc8 ul li a:hover{
+    color: white;
+}
+
+
+
+#yc9 ul{
+    /*  border: 1px solid black ;*/
+    float: left;
+    margin: 10px 0px ;
+}
+#yc9 ul li{
+    list-style: none;
+    margin: 0px 0px;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+}
+#yc9 ul li>a:hover{
+    background-color: #02afc7;
+}
+#yc9 ul li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+}
+#yc9 ul li a:hover{
+    color: white;
+}
+
+/*左边第二个输入框*/
+#input2_2{/*整个第二个输入框是,div用相对定位*/
+    border: 1px solid #cccccc;
+    width: 224px;
+    height: 37px;
+    position: relative;
+    background: white;
+    margin-top: 15px
+}
+.fanhui{/*返回文字，用绝对定位*/
+    position: absolute;
+    left: 0px;
+    top: 11px;
+    line-height: 12px;
+    padding: 0 4px 0 4px;
+    font-size: 12px;
+    text-align: right;
+    color: #999;
+}
+/*输入的input框不用定位*/
+/*日期小格子图片,用了position，
+位置的移动以最外面的框为准，
+最外面的框用了reletive*/
+.riqi1 b{
+    /*border: 1px solid black;*/
+    width: 20px;
+    height: 15px;
+   display: inline-block;
+    background: url("../img/QNEimage/i_qbox.png");
+
+}
+.riqi1{
+    /*float: right;*/
+    position: absolute;
+    right: 0px;
+    top: 9px;
+    /*border: 1px solid black;*/
+}
+/*中间换字的图标*/
+#midimg{
+   /* border: 1px solid red;*/
+    width: 23px;
+    height: 56px;
+    float: left;
+    position: relative;/*因为父容器整个大的父容器是reletive*/
+    top: 20px ;
+    background: url("../img/QNEimage/home_v5.png") -142px 0px no-repeat  ;
+
+}
+#midimg:hover{
+    background: url("../img/QNEimage/home_v5.png") -142px -60px no-repeat  ;
+
+}
+
+/*单独改变input框中plca的字体大小*/
+/*发现改变input框中font的时候，plac的字体也会改变*/
+#in1,#in2::-webkit-input-placeholder{
+    font-size: 14px;
+}
+/*右边第一个日期输入框*/
+#input3_1{
+    border: 1px solid #cccccc;
+    width: 224px;
+    height: 37px;
+    position: relative;
+    background: white;
+}
+
+/*日期小图片*/
+.riqi2 b{
+    /*border: 1px solid black;*/
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/QNEimage/i_qbox.png") -26px 0px;
+
+}
+.riqi2{
+    /*float: right;*/
+    position: absolute;
+    right: 0px;
+    top: 9px;
+    /*border: 1px solid black;*/
+}
+/*后天的spna标签*/
+.span1{
+    display: inline-block;
+    width: 24px;
+    height: 15px;
+   /* border: 1px solid black;*/
+    font-size: 12px;
+    position: absolute;
+    left: 175px;
+    top: 8px;
+    color: #999;
+}
+
+/*切换时间的按钮*/
+#anniu1{
+    position: absolute;
+   /* border: 1px solid black;*/
+    width: 25px;
+    height: 25px;
+    left: 20px;
+    top: 10px;
+    z-index: 100;
+
+    background:url("../img/QNEimage/i_qbox.png")-3px -28px no-repeat;
+}
+#anniu2{
+    position: absolute;
+    z-index: 100;
+    /*border: 1px solid black;*/
+    width: 25px;
+    height: 25px;
+    right: 20px;
+    top: 10px;
+    background: url("../img/QNEimage/i_qbox.png") no-repeat -30px -28px;
+}
+/*日期隐藏列表*/
+
+#date1{
+    position: absolute;
+    border: 1px solid #cccccc;
+    width: 610px;
+    height: 347px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    display: none;
+    z-index: 100;
+}
+/*第一个日期表的格式*/
+#firstTable,#secondTable,#thirdTable,#fourTable,#fiveTable{
+    /*border: 1px solid black;*/
+    float: left;
+}
+.table1{
+
+}
+#tr1>td{
+    border: none;
+    background: #f5f5f5;
+}
+.table1 td{
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    border: 1px solid #f3f3f3;
+    background: white;
+}
+#firstTable{
+    margin: 10px 10px;
+}
+.table1 a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+}
+.table1 a:hover{
+    background-color: #02afc7;
+}
+
+
+
+/*第二个日期表的格式*/
+.table2{
+
+}
+#tr2>td{
+    border: none;
+    background: #f5f5f5;
+}
+.table2 td{
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    border: 1px solid #f3f3f3;
+    background: white;
+}
+#secondTable{
+    margin: 10px 10px;
+}
+.table2 a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+}
+.table2 a:hover{
+    background-color: #02afc7;
+}
+
+
+
+
+/*第3个日期表的格式*/
+.table3{
+
+}
+#tr3>td{
+    border: none;
+    background: #f5f5f5;
+}
+.table3 td{
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    border: 1px solid #f3f3f3;
+    background: white;
+}
+#thirdTable{
+    margin: 10px 10px;
+}
+.table3 a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+}
+.table3 a:hover{
+    background-color: #02afc7;
+}
+
+
+
+
+/*第4个日期表的格式*/
+.table4{
+
+}
+#tr4>td{
+    border: none;
+    background: #f5f5f5;
+}
+.table4 td{
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    border: 1px solid #f3f3f3;
+    background: white;
+}
+#fourTable{
+    margin: 10px 10px;
+}
+.table4 a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+}
+.table4 a:hover{
+    background-color: #02afc7;
+}
+
+
+/*第4个日期表的格式*/
+.table4{
+
+}
+#tr5>td{
+    border: none;
+    background: #f5f5f5;
+}
+.table5 td{
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    border: 1px solid #f3f3f3;
+    background: white;
+}
+#fiveTable{
+    margin: 10px 10px;
+}
+.table5 a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+}
+.table5 a:hover{
+    background-color: #02afc7;
+}
+
+
+
+#input3_2{
+    border: 1px solid #cccccc;
+    width: 224px;
+    height: 37px;
+    position: relative;
+    background: white;
+    margin-top: 15px;
+}
+/*输入的input框不用定位*/
+/*日期小格子图片,用了position，
+位置的移动以最外面的框为准，
+最外面的框用了reletive*/
+.riqi3 b{
+    /*border: 1px solid black;*/
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/QNEimage/i_qbox.png")-26px 0px;
+
+}
+.riqi3{
+    /*float: right;*/
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    /*border: 1px solid black;*/
+}
+
+/*日期下列表*/
+#ssuo1{
+    clear: both;
+    /*border: 1px solid blue;*/
+    width: 364px;
+    height: 20px;
+    position: relative;
+    top:-15px;
+}
+#ssuo1>table td{
+    height: 20px;
+    width: 50px;
+    text-align: center;
+
+}
+#ssuo1>table a{
+    border: 1px solid #cccccc;
+   display: inline-block;
+    width: 50px;
+    height: 20px;
+    text-decoration: none;
+    color: rgba(94, 94, 94, 0.88);
+}
+/*隐藏的成人和儿童*/
+#chengren{
+    position: absolute;
+    width: 224px;
+    height: 37px;
+    background-color: white;
+    display: none;
+   /* border: 1px solid black;*/
+}
+#chengren span{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    width: 38px;
+    height: 37px;
+    line-height: 37px;
+    top: 0px;
+    left: 3px;
+    text-align: center;
+    font-size: 14px;
+}
+#cr{
+    width: 20px;
+    border-left: 1px solid #ccc;
+    float: right;
+    margin-top: 9px;
+    display: inline;
+    /*border: 1px solid black;*/
+    height: 14px;
+    position: relative;
+    left: -110px;
+
+}
+#cr b{
+    width: 20px;
+    height: 16px;
+    margin-left: 3px;
+    background: url(../img/QNEimage/ico_a.png) no-repeat scroll 4px 5px;
+    display: block;
+    cursor: pointer;
+}
+#shuzi{
+    position: relative;
+    width: 114px;
+    height: 272px;
+    /*border: 1px solid black;*/
+    background: white;
+    display: none;
+    border: 1px solid #cccccc;
+
+}
+#shuzi ul{
+    list-style:none;
+    width: 83px;
+    height: 270px;
+
+    margin: 0px 7px;
+}
+#shuzi ul li{
+    width: 83px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+#shuzi ul a{
+    width: 83px;
+    height: 30px;
+    line-height: 30px;
+   text-decoration: none;
+    color: black;
+    display: block;
+}
+#shuzi ul a:hover{
+    background-color: #02afc7;
+}
+
+    /*搜索栏*/
+#ss{
+   /* border: 1px solid black;*/
+    width: 496px;
+    height: 40px;
+    margin-left: 19px;
+}
+#ss p{
+    float: left;
+    font-size: 13px;
+    margin-top: 13px;
+}
+#span2{
+    float: right;
+    display: inline-block;
+}
+#span2>input{
+    width: 133px;
+    height: 41px;
+    background: url(../img/QNEimage/home_v5.png) no-repeat left top;
+    display: inline-block;
+    zoom: 1;
+    border: 0;
+}
+/*最下面图片栏*/
+#ff a{
+    display: block;
+    width: 100%;
+    height: 35px;
+    background: url(../img/QNEimage/flight_bar2.png) no-repeat center top;
+}
+#ff{
+    clear: both;
+    margin-top: 35px;
+    border-bottom: 1px solid #02afc7;
+    padding-bottom: 7px;
+
+}
+/*<!--插入特色住宿公寓-->*/
+#teshetitle{
+    width: 970px;
+    height: 45px;
+    line-height: 45px;
+    /*border: 1px solid black;*/
+    clear: both;
+   position: relative;
+    top:15px;
+    border-bottom: 2px solid #02afc7;
+}
+#teshetitle h3{
+    line-height: 45px;
+    font: 23px/45px "\5FAE\8F6F\96C5\9ED1";
+    font-family: 'Hiragino Sans GB',"\5FAE\8F6F\96C5\9ED1";
+    color: #00afc7;
+
+}
+#gg2 li{
+    list-style: none;
+    font-size: 13px;
+    margin: 10px 8px;
+
+}
+#gg2 li a{
+    text-decoration: none;
+    color: #999;
+;
+}
+#gg2 li a:hover{
+    text-decoration: underline;
+}
+#ts2tit ul li{
+    float: left;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 14px;
+    color: black;
+}
+#ts2tit a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+#ts2tit a:hover{
+    color: white;
+    background: #3bb0d0;
+}
+#div1 div{
+    float: left;
+}
+#div2,#div3,#div4{
+    display: none;
+   /* position: relative;*/
+}
+#div2{
+    left: 160px;
+    z-index: 100;
+    background: white;
+}
+#div3{
+    left: 160px;
+    background: white;
+}
+#div4{
+    left: 160px;
+    background: white;
+}
+#ys3:hover #div3{
+    display: block;
+}
+#ys4:hover #div4{
+    display: block;
+}
+#ys2:hover #div2{
+    display: block;
+}
+/*6张图片的样式*/
+#yinchang1{
+    transform: translate(0px,-25px);
+    transition: transform 0.5s linear;
+    background: black;
+    filter: opacity(85%);
+
+}
+#img1:hover #yinchang1{
+    transform: translate(0,-85px);
+
+
+}
+#yinchang2{
+    transform: translate(0px,-25px);
+    transition: transform 0.5s linear;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+}
+#img2:hover #yinchang2{
+    transform: translate(0px,-85px);
+}
+
+#yinchang4{
+    transform: translate(0px,-25px);
+    transition: transform 0.5s linear;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+
+
+}
+#img4:hover #yinchang4 {
+    transform: translate(0, -65px);
+}
+
+#yinchang3{
+    transform: translate(0px,-25px);
+    transition: transform 0.5s linear;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+}
+#img3:hover #yinchang3{
+    transform: translate(0px,-100px);
+}
+
+#yinchang5{
+    transform: translate(0px,-25px);
+    transition: transform 0.5s linear;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+}
+#img5:hover #yinchang5{
+    transform: translate(0px,-85px);
+}
+
+#yinchang6{
+    transform: translate(0px,-25px);
+    transition: transform 0.5s linear;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+}
+#img6:hover #yinchang6{
+    transform: translate(0px,-105px);
+}
+
+
+/*插入公告栏*/
+#gonggao{
+    width: 260px;
+    height: 710px;
+   /* border: 1px solid black;*/
+    position: absolute;
+    left:77%;
+    top: 580px;
+    z-index: -55;
+}
+#biaoti{
+    color: #333;
+    background: #fcfefe;
+    height: 23px;
+    line-height: 23px;
+    border-bottom: 1px solid #eee;
+    padding: 0 8px;
+}
+/*插入去哪儿网客服电话*/
+#gg3{
+    border: 1px solid #eee;
+    padding-top: 20px;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+#gg3 div{
+    margin: 5px;
+}
+#gg3 span{
+    float: right;
+}
+#gg4 p{
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 12px;
+    color: #c4d0d6;
+    height: 16px;
+    line-height: 16px;
+}
+#pp{
+    float: right;
+    width: 32px;
+    height: 18px;
+    border-top-left-radius: 4px;
+    background: #2D5F72;
+    overflow: hidden;
+}
+
+#biaoti1{
+    color: #333;
+    background: #fcfefe;
+    height: 50px;
+    line-height: 23px;
+    border-bottom: 1px solid #eee;
+    padding: 0 8px;
+}
+
+#jiazhou ul li{
+    float: left;
+    list-style: none;
+    font-size: 14px;
+    color: #999;
+}
+
+#biaoti3{
+    color: #333;
+    background: #fcfefe;
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid #eee;
+    padding: 0 8px;
+}
+#gg6 li{
+    list-style: none;
+    font-size: 13px;
+    margin: 10px 8px;
+
+}
+#gg6 li a{
+    text-decoration: none;
+    color: #999;
+;
+}
+#gg6 li a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/*轮播图片广告*/
+#box2{
+    top: 450px;;
+    left: 50px;
+    clear: both;
+    /*width:725px;*/
+    width: 970px;
+    /*
+    border: 1px solid red;
+    */
+    height: 288px;
+    position: relative;
+    overflow: hidden;
+}
+#box2_div{
+   width: 6000px;
+    height: 288px;
+   /* border: 1px solid blue;*/
+    position: relative;
+    /*left: -755px;*/
+
+}
+#box2_ul>li{
+    position: relative;
+    float: left;
+    list-style: none;
+
+}
+/*!*动画轮播*!
+#box2_ul>li{
+    z-index: 0;
+    animation-name: myleft;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
+!*设置动画名字，和帧*!
+@keyframes myleft {
+    0%,20%{ transform: translate(0px);}
+    25%,40%{ transform: translate(-755px);}
+    45%,60%{ transform: translate(-1510px);}
+    65%,80% { transform: translate(-2265px);}
+    85%,100%{ transform: translate(-3020px);}
+}*/
+/*设置原点的样式*/
+#yuandian_div{
+    position: absolute;
+    z-index: 122;
+   /* border: 1px solid black;*/
+    width: 250px;
+    height: 30px;
+    top: 230px;
+    left: 370px;
+}
+#yuandian_div li{
+    /*margin-right: 10px;*/
+    background: #999;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    margin: 0px 10px;
+
+  /*  border: 1px solid black;*/
+   /* margin-bottom: 10px;*/
+}
+
+/*骆驼书，行万里路*/
+#luotuoshu h3{
+    line-height: 45px;
+    font: 23px/45px "\5FAE\8F6F\96C5\9ED1";
+    font-family: 'Hiragino Sans GB',"\5FAE\8F6F\96C5\9ED1";
+    color: #00afc7;
+}
+#luotuoshu{
+    border-bottom: 2px solid #00afc7 ;
+}
+#luotuoshu span{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #999;
+}
+#tit ul li{
+    float: left;
+    list-style: none;
+    margin: 20px;
+    font-size: 14px;
+}
+#tit ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+}
+#tit ul li a:hover{
+    background: #3bb0d0;
+    color: white;
+}
+#tit2 div,#tit3 div,#tit4 div,#tit5 div{
+    display: none;
+    background: white;
+    z-index: 100;
+}
+#tit2:hover div{
+    display: block;
+}
+#tit3:hover div{
+    display: block;
+}
+#tit4:hover div{
+    display: block;
+}
+#tit5:hover div{
+    display: block;
+}
+/*#tit1 div{
+    float: left;
+    margin: 3px;
+}*/
+#nn1,#nn2,#nn3,#nn4{
+float: left;
+    margin: 5px;
+}
+#shouer{
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 240px;
+    height: 339px;
+    background: black;
+    filter: opacity(70%);
+    display: none;
+    /*
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+    */  }
+#nn2:hover #shouer{
+    display: block;
+}
+#shouer_1{
+    margin-top: 52px;
+    margin-left: 20px;
+    color: #fff;
+}
+.bar{
+    padding-top: 1px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.info{
+    margin: 26px 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+#btn{
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    line-height: 20px;
+    border: solid 1px #fff;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+#shouer3{
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 240px;
+    height: 339px;
+    background: black;
+    filter: opacity(70%);
+    display: none;
+    /*
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+    */  }
+#nn3:hover #shouer3{
+    display: block;
+}
+#shouer_3{
+    margin-top: 52px;
+    margin-left: 20px;
+    color: #fff;
+}
+#btn3{
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    line-height: 20px;
+    border: solid 1px #fff;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+#shouer4{
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 240px;
+    height: 339px;
+    background: black;
+    filter: opacity(70%);
+    display: none;
+    /*
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+    */  }
+#nn4:hover #shouer4{
+    display: block;
+}
+#shouer_4{
+    margin-top: 52px;
+    margin-left: 20px;
+    color: #fff;
+}
+#btn4{
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    line-height: 20px;
+    border: solid 1px #fff;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/*网页尾部*/
+#last{
+    /* border: 1px solid black;*/
+    width: 1002px;
+    height: 200px;
+    margin-left: 150px;
+    margin-top:100px ;
+    font-size: 14px;
+    color: #747474;
+    text-align: center;
+}
+#last div{
+    margin: 15px 0px;
+}
+#span1{
+    background: url(../img/QNEimage/24h.png) no-repeat left center;
+    padding-left: 20px;
+}
+
+
+/*侧面导航栏*/
+#cemian{
+    background-color: #f54599;
+    width: 40px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+}
+#qfl{
+    z-index: 555;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 84px;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    background: url("../img/QNEimage/519.png") no-repeat;
+}
+
+#xbr{
+    margin-top: 200px;
+    border: 1px solid #f54599;
+    width: 35px;
+    height: 36px;
+}
+#xbr:hover >div{
+    display: block;
+    border: 1px solid #f54599;
+    border-left:none ;
+}
+#xbr:hover{
+    background: white;
+    border-top:1px solid #f54599 ;
+    border-bottom:1px solid #f54599 ;
+}
+#xbr:hover #s1{
+    background: url("../img/QNEimage/icons21.png");
+
+}
+#xbr #s1{
+    margin: 6px;
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+  /*  border: 1px solid black;*/
+    background: url(//ss.qunarzz.com/package/toolbar/img/icons20.png) no-repeat;
+}
+#xbr>div{
+    display: none;
+}
+#xlt{
+    display: inline-block;
+    background: url(//ss.qunarzz.com/package/toolbar/img/icons20.png) no-repeat;
+    _background: url(//ss.qunarzz.com/package/toolbar/img/icons20-p8.png) no-repeat;
+    background-position: -36px -4px !important;
+    width: 50px;
+    height: 24px;
+ /*   border: 1px solid black;*/
+    margin: 0;
+   /* margin-right: -30px;*/
+    vertical-align: middle;
+}
+/*横杠*/
+#hgang{
+    display: block;
+    width: 24px;
+    height: 1px;
+    border-top: 1px solid #d01762;
+    background-color: #f76aad;
+    margin: 10px auto;
+}
+/*消息*/
+#xiaoxi{
+   /* border: 1px solid black;*/
+    width: 40px;
+    height: 60px;
+    text-align: center;
+   /* margin-left: 5px;*/
+}
+#xiaoxi #s3{
+    margin: 6px;
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+   /* border: 1px solid black;*/
+    background: url(//ss.qunarzz.com/package/toolbar/img/icons20.png) no-repeat 0 -11px;
+}
+#s2{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+   /* border: 1px solid black;*/
+    margin-left: 2px; ;
+}
+#xiaoxi:hover #s3{
+    background: url("../img/QNEimage/icons21.png") 0 -10px;}
+#xiaoxi:hover{
+    background: white;
+
+}
+#xiaoxi:hover #s2{
+    color:#f54599;
+}
+
+/*订单*/
+/*消息*/
+#dingdan{
+    width: 40px;
+    height: 60px;
+    text-align: center;
+}
+#dingdan #s4{
+    margin: 6px;
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+   /* border: 1px solid black;*/
+    background: url(//ss.qunarzz.com/package/toolbar/img/icons20.png) no-repeat 0 -90px;
+}
+#s5{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+    /*border: 1px solid black;*/
+    margin-left: 2px; ;
+}
+#dingdan:hover #s4{
+    background: url("../img/QNEimage/icons21.png") 0 -32px;}
+#dingdan:hover{
+    background: white;
+
+}
+#dingdan:hover #s5{
+    color:#f54599;
+}
+/*账户*/
+#zh{
+    width: 40px;
+    height: 60px;
+    text-align: center;
+}
+#zh #s6{
+    margin: 6px;
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+   /* border: 1px solid black;*/
+    background: url(//ss.qunarzz.com/package/toolbar/img/icons20.png) no-repeat 0 -28px;
+}
+#s7{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+   /* border: 1px solid black;*/
+    margin-left: 2px; ;
+}
+#zh:hover #s6{
+    background: url("../img/QNEimage/icons21.png") 0 -51px;}
+#zh:hover{
+    background: white;
+
+}
+#zh:hover #s7{
+    color:#f54599;
+}
+/*横杠*/
+#hgang2{
+    display: block;
+    width: 24px;
+    height: 1px;
+    border-top: 1px solid #d01762;
+    background-color: #f76aad;
+    margin: 10px auto;
+}
+
+
+/*二维码部分*/
+/*消息*/
+#xiaoxi2{
+    width: 40px;
+    height: 60px;
+    text-align: center;
+    margin-top: 50px;
+}
+#xiaoxi2 #s32{
+    margin: 6px;
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+   /* border: 1px solid black;*/
+    background: url(//ss.qunarzz.com/package/toolbar/img/icons20.png) no-repeat 0 -11px;
+}
+#s22{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+    /*border: 1px solid black;*/
+    margin-left: 2px; ;
+}
+#xiaoxi2:hover #s32{
+    background: url("../img/QNEimage/icons21.png") 0 -10px;}
+#xiaoxi2:hover{
+    background: white;
+
+}
+#xiaoxi2:hover #s22{
+    color:#f54599;
+}
+
+/*订单*/
+/*消息*/
+#imgdis{
+    display: none;
+}
+
+#dingdan2{
+    width: 40px;
+    height: 60px;
+    text-align: center;
+}
+#dingdan2 #s42{
+    margin: 6px;
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+  /*  border: 1px solid black;*/
+    background: url(//ss.qunarzz.com/package/toolbar/img/icons20.png) no-repeat 0 -90px;
+}
+#s52{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+   /* border: 1px solid black;*/
+    margin-left: 2px; ;
+}
+#dingdan2:hover #s42{
+    background: url("../img/QNEimage/icons21.png") 0 -32px;}
+#dingdan2:hover{
+    background: white;
+
+}
+#dingdan2:hover #s52{
+    color:#f54599;
+}
+#dingdan2:hover #imgdis{
+    display: block;
+}
+/*账户*/
+#zh2{
+    width: 40px;
+    height: 60px;
+    text-align: center;
+}
+#zh2 #s62{
+    margin: 6px;
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    /*border: 1px solid black;*/
+    background: url("../img/QNEimage/icons20.png") no-repeat -34px -93px;
+}
+#s72{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+   /* border: 1px solid black;*/
+    margin-left: 2px; ;
+}
+#zh2:hover #s62{
+    background: url("../img/QNEimage/icons21.png") -34px -31px;}
+#zh2:hover{
+    background: white;
+
+}
+#zh2:hover #s72{
+    color:#f54599;
+}
+/*519疯狂街*/
+#fkj{
+    background: url("../img/QNEimage/icons21.png") no-repeat;
+    background-color: transparent;
+    background-position: -52px 0;
+    width: 96px;
+    height: 48px;
+    position: absolute;
+    z-index: 1;
+    bottom: 41px;
+    left: -95px;
+
+}
+
+/*
+!*大图片的样式*!
+#damig{
+   !* transform: translate(-290px 0px);*!
+   !* top: 0px;
+    left: 500px;*!
+!*    left: -500px;*!
+   !* transform: translate(-290px 0px);*!
+    right: 500px;
+}*/

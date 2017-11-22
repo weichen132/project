@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前台首页</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/前台主页.css">
+
+</head>
+<body>
+    <!--前端页面的最外面框-->
+<div id="out">
+    <!--导航栏--><!--navbar 导航栏组件布局 -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav1">
+        <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand" style="font-size: 25px;color: #00afc7">麦子学院</a>
+        </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="mynav">
+        <ul id="ul1" class="nav navbar-nav pull-right">
+            <li id="sy"><a href="#nr1" class="a1">首页</a></li>
+            <li><a href="#nr2"  class="a2">论坛</a></li>
+            <li><a href="#con3">前端开发</a></li>
+            <li><a href="#zx">最新课程</a></li>
+            <li><a href="#yd">移动APP</a></li>
+            <li><a href="#div1">联系我们</a></li>
+            <li><a href="后台首页.html">后台设置</a></li>
+        </ul>
+        </div>
+        </div >
+    </nav>
+    <!--内容1-->
+    <div id="nr1">
+        <!--从下往上滑动的内容-->
+            <div id="nr1_1" class="center-block text-center">
+                    <h2>bootstrap实战课程等你来站！</h2>
+                <p style="font-size: 10px;margin-top: 20px">本套课程适用于：1.WEB开发人员；2.网站维护人员、管理人员</p>
+                <p style="font-size: 10px">培训技能的目标：使用bootstrap快速构建响应式网页，颠覆WEB前端！</p>
+                <img style="margin-top: 30px" src="images/php.jpg" alt="">
+            </div>
+    </div>
+    <!--内容2 三个图标从下 往上滑动-->
+    <!--内容3 -->
+    <div id="nr2" class="container-fluid">
+        <!--内容2-->
+        <div  class="row text-center" style="height: 350px;overflow: hidden">
+            <div id="con2" class="container">
+            <div id="img1" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+               <div >
+                   <img id="img1_1" class="imgRotate" src="images/a.png" alt="">
+                   <h2>Andirod开发</h2>
+                   <p>andirod开发技术交流、问题求助、实战案列分享</p>
+               </div>
+           </div>
+            <div id="img2" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="">
+                    <img id="img2_1" src="images/i.png" alt="">
+                    <h2>IOS开发</h2>
+                    <p>ios开发技术交流、海量ios资源分享</p>
+                </div>
+            </div>
+            <div id="img3" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="">
+                    <i id="divImg" style="width: 110px;height: 110px;display: inline-block " ><img  id="img3_1" src="images/b.png" alt=""></i>
+                    <h2>嵌入式底层开发</h2>
+                    <p>andirod开发技术交流、问题求助、实战案列分享</p>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        <div class="row" style="height: 350px;background-color: #f8f8f8">
+            <!--往中间靠拢的图标-->
+            <div id="con3" class="container">
+            <div id="con3_1" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <h2>HTML5前端开发</h2>
+                <p>一位资深前端开发工程师的倾情打造！助你完成普通程序员到优秀工程师的华丽升级！</p>
+                <p><i style="border-radius:50%;padding: 5px;" class="glyphicon glyphicon-grain bg-info"></i>&nbsp;&nbsp;使用HTML5与CSS3技术轻松实现设备自适应展示。</p>
+                <p><i style="border-radius:50%;padding: 5px;" class="glyphicon glyphicon-grain bg-info"></i>&nbsp;&nbsp;清晰明了的语义代码结构，更高的可读性、更利于页面的维护。</p>
+            </div>
+            <div id="con3_2" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <img src="images/html5.jpg" alt="">
+            </div>
+            </div>
+        </div>
+
+        <!--往上移动的图标-->
+        <div class="row" style="height: 350px;overflow: hidden">
+            <!--往上移动的图标-->
+            <div id="con4" class="container">
+                <div id="con4_1" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <img src="images/Bootstrap.jpg" alt="">
+                </div>
+                <div id="con4_2" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h2>Bootstrap实战视频</h2>
+                    <p>Bootstrap 是完全开源的。它的代码托管、开发、维护都依赖 GitHub 平台。</p>
+                    <p><i style="border-radius:50%;padding: 5px;" class="glyphicon glyphicon-grain bg-info"></i>&nbsp;&nbsp;Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发,是一个CSS/HTML框架。</p>
+                    <p><i style="border-radius:50%;padding: 5px;" class="glyphicon glyphicon-grain bg-info"></i>&nbsp;&nbsp;Bootstrap 让前端开发更快速、简单。所有开发者都能快速上手、所有设备都可以适配、所有项目都适用。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--最新课程-->
+    <div id="zx" class="container-fluid" style="height: 700px">
+            <div class="row" >
+                <div id="con5" class="container">
+                    <h2 style="text-align: center;margin: 50px auto">最新课程</h2>
+                    <div  class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pic">
+                        <div class="thumbnail text-center">
+                            <img src="images/swift.jpg" alt="">
+                            <button class="btn btn-default" style="margin: 20px 0px;padding: 5px 30px">加入学习</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="thumbnail text-center">
+                            <img src="images/swift.jpg" alt="">
+                            <button class="btn btn-default" style="margin: 20px 0px;padding: 5px 30px">加入学习</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="thumbnail text-center">
+                            <img src="images/swift.jpg" alt="">
+                            <button class="btn btn-default" style="margin: 20px 0px;padding: 5px 30px">加入学习</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="thumbnail text-center">
+                            <img src="images/swift.jpg" alt="">
+                            <button class="btn btn-default" style="margin: 20px 0px;padding: 5px 30px">加入学习</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="thumbnail text-center">
+                            <img src="images/swift.jpg" alt="">
+                            <button class="btn btn-default" style="margin: 20px 0px;padding: 5px 30px">加入学习</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="thumbnail text-center">
+                            <img src="images/swift.jpg" alt="">
+                            <button class="btn btn-default" style="margin: 20px 0px;padding: 5px 30px">加入学习</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="thumbnail text-center">
+                            <img src="images/swift.jpg" alt="">
+                            <button class="btn btn-default" style="margin: 20px 0px;padding: 5px 30px">加入学习</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="thumbnail text-center">
+                            <img src="images/swift.jpg" alt="">
+                            <button class="btn btn-default" style="margin: 20px 0px;padding: 5px 30px">加入学习</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!--麦子移动学院APP下载-->
+    <div id="yd" class="container-fluid " style="height: 450px;overflow: hidden;background-color: #f8f8f8">
+        <!--往上滑动的图标-->
+        <div id="con6" class="container">
+            <div id="con6_1" class="col-lg-6 col-md-6 col-sm-6  col-xs-6">
+                <h2>麦子学院移动APP下载</h2><br>
+                <p style="margin-bottom: 30px">全新UI交互，与新网站数据同步，更加丰富的课程，开启精彩无限，语音搜索课程，喊出你想要的课程，一件收藏，方便自己学习，离线下载课程，在哪里都可以学</p>
+                <button style="padding: 5px 15px" class="btn btn-info"><span class="glyphicon glyphicon-download-alt"></span>iphone版下载</button>
+                <button style="padding: 5px 15px" class="btn btn-info"><span class="glyphicon glyphicon-download-alt"></span>安卓版版下载</button>
+            </div>
+            <div id="con6_2" class="col-lg-6 col-md-6 col-sm-6  col-xs-6">
+                <img style="width: 100%;height: 100%" src="images/app-banner.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--左右进入的最后一栏-->
+<div  class="container-fluid" id="div1" style="height: 500px;">
+<!--给最外面的div加个地图为背景图 ， 里面的container设置一个北京颜色-->
+        <div class="row" >
+            <!--往中间靠拢的图标-->
+            <div id="con7" class="container-fluid" style="height: 500px">
+                <div id="con7_1" class="col-lg-6 col-md-6 col-sm-6  col-xs-6">
+                    <h1><span class="glyphicon glyphicon-send"></span>  联系小麦</h1>
+                    <p style="margin-top:40px">麦子学院目前已有300万人注册，10万以上的的APP下载量，5000小时的视频内容，我们从不说空话专注IT培训，脱离传统的教育束缚，让你学到
+                    哪里 走到哪里，在这里你能和五湖四海的同学一起学习</p>
+                    <p><span class="glyphicon glyphicon-home"></span> 地址：上海市黄浦区天津路180号应氏大厦</p>
+                    <p><span class="glyphicon glyphicon-phone-alt"></span> 联系电话：88888888</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> 邮箱：hr@iwehdwed.com</p>
+
+                </div>
+                <div id="con7_2" class="col-lg-6 col-md-6 col-sm-6  col-xs-6">
+                    <form action="">
+                        <div class="form-inline">
+                            <input type="text" placeholder="您的姓名" class="form-control" style="width: 48%">
+                            <input type="email" placeholder="您的邮箱" class="form-control pull-right" style="width: 48%">
+                        </div>
+                        <div class="form-group" style="margin: 20px 0px">
+                            <input type="text" placeholder="标题" class="form-control">
+                        </div>
+
+                           <textarea style="width: 100%;height: 100px" placeholder="内容"></textarea>
+                        <button class="btn btn-info" style="width: 80%;padding: 5px auto;margin-top: 5px">提交</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+</div>
+    <!--结尾-->
+<div class="bg-danger text-center container-fluid" >
+    <p style="margin: 25px auto;">Copyright ©360.cn. All Rights Reserved.</p>
+</div>
+</div>
+</body>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/jquery.rotate.min.js"></script>
+<script src="js/shouye.js"></script>
+
+</html>

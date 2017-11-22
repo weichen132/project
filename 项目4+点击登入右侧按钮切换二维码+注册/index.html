@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>去哪儿网</title>
+    <link href="CSS/去哪儿网6.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="javascript/qunaer6.js"></script>
+</head>
+<body style="overflow-y: scroll" onmousedown="gggg(event)" >
+    <div id="top"><!--网站头部导航栏-->
+        <div id="top1">
+            <ul>
+                <li id="l1">请 <a href="login.html">登录</a> 或 <a href="register.html">免费注册</a> </li>
+                <li><a href="#"><span id="spa1"></span>消息<span id="spa2"></span></a></li>
+                <li style="width: 60px;height: 15px;float: left"><a href="#" style="display: inline-block;height: 15px;width: 50px;float: left;" >查看订单</a>
+                    <span id="spa3">
+                        <ul id="top_ul">
+                            <li>机票订单</li>
+                        <li>酒店订单</li>
+                        <li>公寓订单</li>
+                        <li>团购订单</li>
+                        <li>度假订单</li>
+                        <li>门票订单</li>
+                        <li>火车票订单</li>
+                        <li>汽车订单</li>
+                        <li>车车订单</li>
+                        <li>Q商城订单</li>
+                        <li>当地人订单</li>
+                        <li>金融订单</li>
+                        <li>礼品卡订单</li>
+                    </ul>
+                </span>
+
+                </li>
+                <li><a href="#">积分商城</a></li>
+                <li><a href="#">联系客服</a></li>
+                <li><a href="#"><img src="img/QNEimage/ico_en_v1.png" style="vertical-align: middle;">In English</a></li>
+            </ul>
+        </div>
+
+        <div id="top2"><!--网站第二个导航栏-->
+            <div>
+            <a href="https://www.qunar.com/"><img src="img/QNEimage/logo.png"></a>
+            </div>
+            <div>
+                <img src="img/QNEimage/dujia_fyj.png" style="position: absolute;left: 545px;top: 33px">
+                <img src="img/QNEimage/local.gif" style="position: absolute;left: 870px;top: 33px">
+                <ul id="top2_u1">
+                    <li ><a href="#" style="color: #02afc7">首页</a></li>
+                    <li><a href="#">机票</a></li>
+                    <li><a href="#">酒店</a></li>
+                    <li id="ll1" style="width: 50px;height:20px;text-align: center;"><span style="display: block;width: 50px;height:20px;position: relative; z-index: 10"><a href="#">团购</a></span>
+                        <div id="top2_di1">
+                            <ul id="top2_u2">
+                                <li><a href="#">酒店团购</a></li>
+                                <li><a href="#">周边休闲</a></li>
+                                <li><a href="#">长线游</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">度假</a></li>
+                    <li id="l2"style="width: 50px;height: 26px;text-align: center;">
+                        <p style="width: 50px;height: 26px;text-align: center;position: relative;z-index: 0;background: white"><a href="#">门票</a></p>
+                        <div id="top2_di2">
+                        <ul>
+
+                            <li><a href="#">国内门票</a></li>
+                            <li><a href="#" style="color: red">品质一日游<i class="qhf_hot3"></i></a></li>
+                            <li><a href="#">玩转海外</a></li>
+                            <li><a href="#">港澳台门票</a></li>
+                            <li><a href="#">地图找景点</a></li>
+                            <li><a href="#">厦门老院子<i class="qhf_hot2"></i></a></li>
+                            <li><a href="#">二连恐龙故里<i class="qhf_hot1"></i></a></li>
+                        </ul>
+                        </div>
+                    </li >
+                    <li><a href="#">火车票</a></li>
+                    <li><a href="#">攻略</a></li>
+                    <li><a href="#">公寓</a></li>
+                    <li id="l4" style="width: 50px;height: 22px;text-align: center;"><a href="#">当地人</a>
+                        <div id="top2_di4">
+                            <ul >
+                                <li>当地人首页</li>
+                                <li style="color: red">出境WiFi<i class="qhf_hot4"></i></li>
+                                <li>旅游包车</li>
+                                <li>一日游</li>
+                                <li>导游讲解</li>
+                                <li>交通卡</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">车车</a></li>
+                    <li><a href="#">汽车票</a></li>
+                    <li><a href="#">海外</a></li>
+                    <li id="l3" style="width: 50px;height: 22px;text-align: center;"><a href="#">保险</a>
+                        <div id="top2_di3">
+                            <ul >
+                                <li><a href="#">首页</a></li>
+                                <li><a href="#">趣游宝</a></li>
+                                <li><a href="#">拿去花</a></li>
+                                <li><a href="#">保险商城</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li ><a href="#">金融</a></li>
+                    <li><a href="#">更多</a><span id="top2_spa"></span></li>
+                </ul>
+            </div>
+            <div style="height: 54px;width:96px;float: left;vertical-align: bottom ;">
+                <img src="img/QNEimage/94-36.gif" style="margin-top: 18px;width: 110px">
+            </div>
+        </div>
+    </div>
+<div style="border: 1px solid #02afc7;margin-top: -20px"></div>
+
+<!--第二部分，查询栏-->
+<div id="cx">
+    <!--查询栏-->
+    <div id="cx1">
+        <!--左边列表栏-->
+        <div id="cx1_left">
+            <ul>
+                <li onclick="show(0)" style="background-color: white;"><a href="#" style="color:#02afc7 ">机票</a></li>
+                <li onclick="show(1)"><a href="#">酒店</a></li>
+                <li onclick="show(2)"><a href="#">火车票</a></li>
+                <li onclick="show(3)"> <a href="#">度假</a></li>
+                <li onclick="show(4)"><a href="#">门票</a></li>
+                <li onclick="show(5)"><a href="#">团购</a></li>
+                <li onclick="show(6)"><a href="#">车车</a></li>
+                <li onclick="show(7)"><a href="#">自由行<i class="new"></i></a></li>
+            </ul>
+        </div>
+        <!--右边输出栏-->
+        <div id="cx1_left2">
+            <div id="title1"><!--第一个页面-->
+                <div id="title1_1">
+                    <ul>
+                        <li onclick="s(0)"><a href="#">国内机票</a></li>
+                        <li onclick="s(1)"><a href="#">国际·港澳台机票</a></li>
+                    </ul>
+                    <div id="title1_2">
+                        <a href="#">出票状态查询</a>
+                        <a href="#">退票改签</a>
+                    </div>
+
+                    <div id="title1_3" >
+                        <div style="width:600px;height: 18px;margin: 15px 15px;">
+
+                          <input  type="radio" name="x" id="x1" checked onclick="hh(1)"> &nbsp;<label for="x1" style="font-size: 13px">单程</label>&nbsp;
+                            <input type="radio" name="x" id="x2" onclick="hh(2)"> &nbsp;<label for="x2" style="font-size: 13px">返程</label>&nbsp;
+
+                            <!--第一页面，先隐藏的第二个页面的部分内容-->
+                            <div id="span3"  style="float: left">
+                            <input type="radio" name="x" id="x3"> &nbsp;<label for="x3" style="font-size: 13px;position: relative">智能搜索<i class="new1"></i></label>
+                            <input type="radio" name="x" id="x4"> &nbsp;<label for="x4" style="font-size: 13px">多程(含缺口)</label>
+                            <input type="radio" name="x" id="x5"> &nbsp;<label for="x5" style="font-size: 13px">价格趋势</label>
+                              </div>
+                            <div id="input1"> <!--第一个页面的4个输入框-->
+                                <div id="input2"><!--第一个页面左边2个框-->
+                                  <div id="input2_1">
+                                        <div class="chufa" onclick="a()" ><a href="#" style="text-decoration: none;color: #999;">出发</a></div>
+                                      <input id="in1"  onclick="a()" style="width: 160px;height: 35px;margin-left: 32px;border: none;outline: none" type="text" value="上海" placeholder="输入国家/城市/机场">
+                                      <div class="riqi" onclick="a()" ><a href="#"><b></b></a></div>
+                                      <!--第一个隐藏的城市列表-->
+                                      <div id="yc1">
+                                          <div id="yc2">
+                                              <ul>
+                                                  <li id="a0" onclick="d(0)"><a href="#">国内热门</a><i class="i1"></i><i class="i2"></i></li>
+                                                  <li id="a1" onclick="d(1)"><a href="#">ABCDE</a></li>
+                                                  <li id="a2" onclick="d(2)"><a href="#">FGHZ</a></li>
+                                                  <li id="a3" onclick="d(3)"><a href="#">KLMNP</a></li>
+                                                  <li id="a4" onclick="d(4)"><a href="#">QRSTW</a></li>
+                                                  <li id="a5" onclick="d(5)"><a href="#">XYZ</a></li>
+                                                  <li id="a6" onclick="d(6)"><a href="#">国际·港澳台</a></li>
+                                              </ul>
+                                              <i id="lala" onclick="a()"></i>
+                                          </div>
+                                          <div id="yc3">
+                                              <ul style="margin-left:20px ">
+                                                 <li><a href="#" class="ABC">北京</a></li>
+                                                  <li><a href="#" class="ABC">三亚</a></li>
+                                                  <li><a href="#" class="ABC">南京</a></li>
+                                                  <li><a href="#" class="ABC">武汉</a></li>
+                                                  <li><a href="#" class="ABC">云南</a></li>
+
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#" class="ABC">上海</a></li>
+                                                  <li><a href="#" class="ABC">广州</a></li>
+                                                  <li><a href="#" class="ABC">丽江</a></li>
+                                                  <li><a href="#" class="ABC">长沙</a></li>
+                                                  <li><a href="#" class="ABC">黑龙江</a></li>
+
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#" class="ABC">成都</a></li>
+                                                  <li><a href="#" class="ABC">哈尔滨</a></li>
+                                                  <li><a href="#" class="ABC">郑州</a></li>
+                                                  <li><a href="#" class="ABC">南宁</a></li>
+                                                  <li><a href="#" class="ABC">成都</a></li>
+
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#" class="ABC">昆明</a></li>
+                                                  <li><a href="#" class="ABC">三亚</a></li>
+                                                  <li><a href="#" class="ABC">福州</a></li>
+                                                  <li><a href="#" class="ABC">太原</a></li>
+                                                  <li><a href="#" class="ABC">东湾</a></li>
+
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#" class="ABC">唐山</a></li>
+                                                  <li><a href="#" class="ABC">桂林</a></li>
+                                                  <li><a href="#" class="ABC">扬州</a></li>
+                                                  <li><a href="#" class="ABC">十堰</a></li>
+                                                  <li><a href="#" class="ABC">新乡</a></li>
+
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#" class="ABC">嘉定</a></li>
+                                                  <li><a href="#" class="ABC">松江</a></li>
+                                                  <li><a href="#" class="ABC">徐家汇</a></li>
+                                                  <li><a href="#" class="ABC">浦东</a></li>
+                                                  <li><a href="#" class="ABC">长宁</a></li>
+
+                                              </ul>
+                                          </div>
+                                          <div id="yc4">
+                                             <ul style="margin-left: 15px;width: 50px;">
+                                                 <li>A</li>
+                                                 <li></li>
+                                                 <li>B</li>
+                                                 <li></li>
+                                                 <li>C</li>
+                                                 <li></li>
+                                                 <li></li>
+                                                 <li>D</li>
+                                                 <li></li>
+                                                 <li>E</li>
+                                             </ul>
+                                              <ul>
+                                                    <li><a href="#" class="ABC">阿勒泰</a></li>
+                                                  <li><a href="#" class="ABC">鞍山</a></li>
+                                                  <li><a href="#" class="ABC">包头</a></li>
+                                                  <li><a href="#" class="ABC">博乐</a></li>
+                                                  <li><a href="#" class="ABC">长治</a></li>
+                                                  <li><a href="#" class="ABC">曹阳</a></li>
+                                                  <li><a href="#" class="ABC">长沙</a></li>
+                                                  <li><a href="#" class="ABC">大同</a></li>
+                                                  <li><a href="#" class="ABC">大理</a></li>
+                                                  <li><a href="#" class="ABC">恩施</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#" class="ABC">阿克苏</a></li>
+                                                  <li><a href="#" class="ABC">澳门</a></li>
+                                                  <li><a href="#" class="ABC">北海</a></li>
+                                                  <li><a href="#" class="ABC">毕节</a></li>
+                                                  <li><a href="#" class="ABC">池州</a></li>
+                                                  <li><a href="#" class="ABC">常德</a></li>
+                                                  <li><a href="#" class="ABC">赤峰</a></li>
+                                                  <li><a href="#" class="ABC">大连</a></li>
+                                                  <li><a href="#" class="ABC">敦煌</a></li>
+                                                  <li><a href="#" class="ABC">鄂尔多斯</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#" class="ABC">安庆</a></li>
+                                                  <li><a href="#" class="ABC">阿克苏</a></li>
+                                                  <li><a href="#" class="ABC">北京</a></li>
+                                                  <li><a href="#" class="ABC">巴彦</a></li>
+                                                  <li><a href="#" class="ABC">长春</a></li>
+                                                  <li><a href="#" class="ABC">长白山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#" class="ABC">东营</a></li>
+                                                  <li><a href="#" class="ABC">达州</a></li>
+                                                  <li><a href="#" class="ABC">二连浩特</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#" class="ABC">阿拉善</a></li>
+                                                  <li><a href="#" class="ABC">安阳</a></li>
+                                                  <li><a href="#" class="ABC">百色</a></li>
+                                                  <li></li>
+                                                  <li><a href="#" class="ABC">常州</a></li>
+                                                  <li><a href="#" class="ABC">成都</a></li>
+                                                  <li></li>
+                                                  <li><a href="#" class="ABC">大庆</a></li>
+                                                  <li><a href="#" class="ABC">桃城</a></li>
+                                                  <li><a href="#" class="ABC">鄂尔</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#" class="ABC">安康</a></li>
+                                                  <li><a href="#" class="ABC">阿拉</a></li>
+                                                  <li><a href="#" class="ABC">宝山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#" class="ABC">昌都</a></li>
+                                                  <li><a href="#" class="ABC" >重庆</a></li>
+                                                  <li></li>
+                                                  <li><a href="#" class="ABC">丹东</a></li>
+                                                  <li></li>
+                                                  <li></li>
+                                              </ul>
+                                          </div>
+                                          <div id="yc5">
+                                              <ul style="margin-left: 15px;width: 50px;">
+                                                  <li>F</li>
+                                                  <li>G</li>
+                                                  <li></li>
+                                                  <li>H</li>
+                                                  <li></li>
+                                                  <li></li>
+                                                  <li>J</li>
+                                                  <li></li>
+                                                  <li></li>
+                                                  <li></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿勒泰</a></li>
+                                                  <li><a href="#">鞍山</a></li>
+                                                  <li><a href="#">包头</a></li>
+                                                  <li><a href="#">博乐</a></li>
+                                                  <li><a href="#">长治</a></li>
+                                                  <li><a href="#">曹阳</a></li>
+                                                  <li><a href="#">长沙</a></li>
+                                                  <li><a href="#">大同</a></li>
+                                                  <li><a href="#">大理</a></li>
+                                                  <li><a href="#">恩施</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿克苏</a></li>
+                                                  <li><a href="#">澳门</a></li>
+                                                  <li><a href="#">北海</a></li>
+                                                  <li><a href="#">毕节</a></li>
+                                                  <li><a href="#">池州</a></li>
+                                                  <li><a href="#">常德</a></li>
+                                                  <li><a href="#">赤峰</a></li>
+                                                  <li><a href="#">大连</a></li>
+                                                  <li><a href="#">敦煌</a></li>
+                                                  <li><a href="#">鄂尔多斯</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">安庆</a></li>
+                                                  <li><a href="#">阿克苏</a></li>
+                                                  <li><a href="#">北京</a></li>
+                                                  <li><a href="#">巴彦</a></li>
+                                                  <li><a href="#">长春</a></li>
+                                                  <li><a href="#">长白山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">东营</a></li>
+                                                  <li><a href="#">达州</a></li>
+                                                  <li><a href="#">二连浩特</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿拉善</a></li>
+                                                  <li><a href="#">安阳</a></li>
+                                                  <li><a href="#">百色</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">常州</a></li>
+                                                  <li><a href="#">成都</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">大庆</a></li>
+                                                  <li><a href="#">桃城</a></li>
+                                                  <li><a href="#">鄂尔</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">安康</a></li>
+                                                  <li><a href="#">阿拉</a></li>
+                                                  <li><a href="#">宝山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">昌都</a></li>
+                                                  <li><a href="#">重庆</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">丹东</a></li>
+                                                  <li></li>
+                                                  <li></li>
+                                              </ul>
+                                          </div>
+                                          <div id="yc6">
+                                              <ul style="margin-left: 15px;width: 50px;">
+                                                  <li>K</li>
+                                                  <li></li>
+                                                  <li></li>
+                                                  <li>L</li>
+                                                  <li></li>
+                                                  <li></li>
+                                                  <li>M</li>
+                                                  <li></li>
+                                                  <li>N</li>
+                                                  <li>P</li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿勒泰</a></li>
+                                                  <li><a href="#">鞍山</a></li>
+                                                  <li><a href="#">包头</a></li>
+                                                  <li><a href="#">博乐</a></li>
+                                                  <li><a href="#">长治</a></li>
+                                                  <li><a href="#">曹阳</a></li>
+                                                  <li><a href="#">长沙</a></li>
+                                                  <li><a href="#">大同</a></li>
+                                                  <li><a href="#">大理</a></li>
+                                                  <li><a href="#">恩施</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿克苏</a></li>
+                                                  <li><a href="#">澳门</a></li>
+                                                  <li><a href="#">北海</a></li>
+                                                  <li><a href="#">毕节</a></li>
+                                                  <li><a href="#">池州</a></li>
+                                                  <li><a href="#">常德</a></li>
+                                                  <li><a href="#">赤峰</a></li>
+                                                  <li><a href="#">大连</a></li>
+                                                  <li><a href="#">敦煌</a></li>
+                                                  <li><a href="#">鄂尔多斯</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">安庆</a></li>
+                                                  <li><a href="#">阿克苏</a></li>
+                                                  <li><a href="#">北京</a></li>
+                                                  <li><a href="#">巴彦</a></li>
+                                                  <li><a href="#">长春</a></li>
+                                                  <li><a href="#">长白山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">东营</a></li>
+                                                  <li><a href="#">达州</a></li>
+                                                  <li><a href="#">二连浩特</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿拉善</a></li>
+                                                  <li><a href="#">安阳</a></li>
+                                                  <li><a href="#">百色</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">常州</a></li>
+                                                  <li><a href="#">成都</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">大庆</a></li>
+                                                  <li><a href="#">桃城</a></li>
+                                                  <li><a href="#">鄂尔</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">安康</a></li>
+                                                  <li><a href="#">阿拉</a></li>
+                                                  <li><a href="#">宝山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">昌都</a></li>
+                                                  <li><a href="#">重庆</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">丹东</a></li>
+                                                  <li></li>
+                                                  <li></li>
+                                              </ul>
+                                          </div>
+                                          <div id="yc7">
+                                              <ul style="margin-left: 15px;width: 50px;">
+                                                  <li>Q</li>
+                                                  <li></li>
+                                                  <li></li>
+                                                  <li>R</li>
+                                                  <li></li>
+                                                  <li></li>
+                                                  <li>S</li>
+                                                  <li>T</li>
+                                                  <li></li>
+                                                  <li>W</li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿勒泰</a></li>
+                                                  <li><a href="#">鞍山</a></li>
+                                                  <li><a href="#">包头</a></li>
+                                                  <li><a href="#">博乐</a></li>
+                                                  <li><a href="#">长治</a></li>
+                                                  <li><a href="#">曹阳</a></li>
+                                                  <li><a href="#">长沙</a></li>
+                                                  <li><a href="#">大同</a></li>
+                                                  <li><a href="#">大理</a></li>
+                                                  <li><a href="#">恩施</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿克苏</a></li>
+                                                  <li><a href="#">澳门</a></li>
+                                                  <li><a href="#">北海</a></li>
+                                                  <li><a href="#">毕节</a></li>
+                                                  <li><a href="#">池州</a></li>
+                                                  <li><a href="#">常德</a></li>
+                                                  <li><a href="#">赤峰</a></li>
+                                                  <li><a href="#">大连</a></li>
+                                                  <li><a href="#">敦煌</a></li>
+                                                  <li><a href="#">鄂尔多斯</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">安庆</a></li>
+                                                  <li><a href="#">阿克苏</a></li>
+                                                  <li><a href="#">北京</a></li>
+                                                  <li><a href="#">巴彦</a></li>
+                                                  <li><a href="#">长春</a></li>
+                                                  <li><a href="#">长白山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">东营</a></li>
+                                                  <li><a href="#">达州</a></li>
+                                                  <li><a href="#">二连浩特</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿拉善</a></li>
+                                                  <li><a href="#">安阳</a></li>
+                                                  <li><a href="#">百色</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">常州</a></li>
+                                                  <li><a href="#">成都</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">大庆</a></li>
+                                                  <li><a href="#">桃城</a></li>
+                                                  <li><a href="#">鄂尔</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">安康</a></li>
+                                                  <li><a href="#">阿拉</a></li>
+                                                  <li><a href="#">宝山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">昌都</a></li>
+                                                  <li><a href="#">重庆</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">丹东</a></li>
+                                                  <li></li>
+                                                  <li></li>
+                                              </ul>
+                                          </div>
+                                          <div id="yc8">
+                                              <ul style="margin-left: 15px;width: 50px;">
+                                                  <li>X</li>
+                                                  <li></li>
+                                                  <li></li>
+                                                  <li>Y</li>
+                                                  <li></li>
+                                                  <li></li>
+                                                  <li>Z</li>
+                                                  <li></li>
+                                                  <li></li>
+                                                  <li></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿勒泰</a></li>
+                                                  <li><a href="#">鞍山</a></li>
+                                                  <li><a href="#">包头</a></li>
+                                                  <li><a href="#">博乐</a></li>
+                                                  <li><a href="#">长治</a></li>
+                                                  <li><a href="#">曹阳</a></li>
+                                                  <li><a href="#">长沙</a></li>
+                                                  <li><a href="#">大同</a></li>
+                                                  <li><a href="#">大理</a></li>
+                                                  <li><a href="#">恩施</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿克苏</a></li>
+                                                  <li><a href="#">澳门</a></li>
+                                                  <li><a href="#">北海</a></li>
+                                                  <li><a href="#">毕节</a></li>
+                                                  <li><a href="#">池州</a></li>
+                                                  <li><a href="#">常德</a></li>
+                                                  <li><a href="#">赤峰</a></li>
+                                                  <li><a href="#">大连</a></li>
+                                                  <li><a href="#">敦煌</a></li>
+                                                  <li><a href="#">鄂尔多斯</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">安庆</a></li>
+                                                  <li><a href="#">阿克苏</a></li>
+                                                  <li><a href="#">北京</a></li>
+                                                  <li><a href="#">巴彦</a></li>
+                                                  <li><a href="#">长春</a></li>
+                                                  <li><a href="#">长白山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">东营</a></li>
+                                                  <li><a href="#">达州</a></li>
+                                                  <li><a href="#">二连浩特</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿拉善</a></li>
+                                                  <li><a href="#">安阳</a></li>
+                                                  <li><a href="#">百色</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">常州</a></li>
+                                                  <li><a href="#">成都</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">大庆</a></li>
+                                                  <li><a href="#">桃城</a></li>
+                                                  <li><a href="#">鄂尔</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">安康</a></li>
+                                                  <li><a href="#">阿拉</a></li>
+                                                  <li><a href="#">宝山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">昌都</a></li>
+                                                  <li><a href="#">重庆</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">丹东</a></li>
+                                                  <li></li>
+                                                  <li></li>
+                                              </ul>
+                                          </div>
+                                          <div id="yc9">
+                                              <ul style="margin-left: 20px">
+                                                  <li><a href="#">阿勒泰</a></li>
+                                                  <li><a href="#">鞍山</a></li>
+                                                  <li><a href="#">包头</a></li>
+                                                  <li><a href="#">博乐</a></li>
+                                                  <li><a href="#">长治</a></li>
+                                                  <li><a href="#">曹阳</a></li>
+                                                  <li><a href="#">长沙</a></li>
+                                                  <li><a href="#">大同</a></li>
+                                                  <li><a href="#">大理</a></li>
+                                                  <li><a href="#">恩施</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿勒泰</a></li>
+                                                  <li><a href="#">鞍山</a></li>
+                                                  <li><a href="#">包头</a></li>
+                                                  <li><a href="#">博乐</a></li>
+                                                  <li><a href="#">长治</a></li>
+                                                  <li><a href="#">曹阳</a></li>
+                                                  <li><a href="#">长沙</a></li>
+                                                  <li><a href="#">大同</a></li>
+                                                  <li><a href="#">大理</a></li>
+                                                  <li><a href="#">恩施</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿克苏</a></li>
+                                                  <li><a href="#">澳门</a></li>
+                                                  <li><a href="#">北海</a></li>
+                                                  <li><a href="#">毕节</a></li>
+                                                  <li><a href="#">池州</a></li>
+                                                  <li><a href="#">常德</a></li>
+                                                  <li><a href="#">赤峰</a></li>
+                                                  <li><a href="#">大连</a></li>
+                                                  <li><a href="#">敦煌</a></li>
+                                                  <li><a href="#">鄂尔多斯</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">安庆</a></li>
+                                                  <li><a href="#">阿克苏</a></li>
+                                                  <li><a href="#">北京</a></li>
+                                                  <li><a href="#">巴彦</a></li>
+                                                  <li><a href="#">长春</a></li>
+                                                  <li><a href="#">长白山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">东营</a></li>
+                                                  <li><a href="#">达州</a></li>
+                                                  <li><a href="#">二连浩特</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">阿拉善</a></li>
+                                                  <li><a href="#">安阳</a></li>
+                                                  <li><a href="#">百色</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">常州</a></li>
+                                                  <li><a href="#">成都</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">大庆</a></li>
+                                                  <li><a href="#">桃城</a></li>
+                                                  <li><a href="#">鄂尔</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">安康</a></li>
+                                                  <li><a href="#">阿拉</a></li>
+                                                  <li><a href="#">宝山</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">昌都</a></li>
+                                                  <li><a href="#">重庆</a></li>
+                                                  <li></li>
+                                                  <li><a href="#">丹东</a></li>
+                                                  <li></li>
+                                                  <li></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                    <!--左边第2个输入框-->
+                                    <div id="input2_2">
+                                        <div class="fanhui" onclick="login()"><a href="#" style="text-decoration: none;color: #999;">返回</a></div>
+                                        <input id="in2" onclick="login()" type="text" placeholder="输入国家/城市/机场" style="width: 160px;height: 35px;margin-left: 32px;border: none;position: absolute">
+                                        <div class="riqi1" onclick="login()"><a href="#"><b></b></a></div>
+                                    </div>
+                                </div>
+                                <!--中间换的图标-->
+                                <div id="midimg" onclick="change()">
+                                    <a href="#" style="display: block;width: 23px;height: 56px"></a>
+                                </div>
+                                <div id="input3"><!--右边输入框的父容器-->
+                                     <!--右边第一个日期输入框-->
+                                    <div id="input3_1">
+                                        <div class="fanhui" onclick="time1()"><a href="#" style="text-decoration: none;color: #999;">日期</a></div>
+                                        <input id="in3" onclick="time1()" type="text" value="2017-6-12" style="font-weight: 700;font-size:15px;color:black;width: 160px;height: 35px;margin-left: 32px;position: absolute;outline: none;border: none">
+                                        <span class="span1" onclick="time1()"><a href="" style="color:#999;text-decoration: none">后天</a></span>
+                                        <div class="riqi2" onclick="time1()"><a href="#"><b></b></a></div>
+                                    </div>
+
+                                    <!--右边第二个日期输入框-->
+                                    <div id="input3_2">
+                                        <div class="fanhui" onclick="login2()" ><a href="#" style="text-decoration: none;color: #999;">日期</a></div>
+                                        <input id="in4"  onclick="login2()" type="text" value="" style="font-weight: 700;font-size:15px;color:black;width: 160px;height: 35px;margin-left: 32px;position: absolute;outline: none;border: none">
+                                        <div class="riqi3"  onclick="login2()"><a href="#"><b></b></a></div>
+                                    </div>
+
+
+                                    <!--日期隐藏列表-->
+                                    <div id="date1">
+                                        <!--切换时间的按钮-->
+                                        <div id="anniu1" onclick="ccccc()">
+
+                                        </div>
+                                        <div id="anniu2" onclick="changeTime1()">
+
+                                        </div>
+
+
+                                        <!--这个外围div是包含所有日期列表的div，点击按钮这个div整体移动-->
+                                        <div id="tab1" style="width: 1700px;height: 400px;position: relative">
+                                        <!--6月份的日期-->
+                                        <div id="firstTable">
+                                            <table  class="table1" cellspacing="0">
+                                                <caption style="font-weight: bolder;font-size: 16px;">2017年6月</caption>
+                                                <tr id="tr1">
+                                                    <td>一</td>
+                                                    <td>二</td>
+                                                    <td>三</td>
+                                                    <td>四</td>
+                                                    <td>五</td>
+                                                    <td style="color: red">六</td>
+                                                    <td style="color: red">日</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td style="color: #cccccc" >1</td>
+                                                    <td style="color: #cccccc" >2</td>
+                                                    <td style="color: #cccccc" >3</td>
+                                                    <td style="color: #cccccc" >4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color: #cccccc" >5</td>
+                                                    <td style="color: #cccccc" >6</td>
+                                                    <td style="color: #cccccc" >7</td>
+                                                    <td style="color: #cccccc" >8</td>
+                                                    <td style="color: #cccccc" >9</td>
+                                                    <td style="color: #cccccc" >10</td>
+                                                    <td style="color: #cccccc" >11</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color: #cccccc" class="one">12</td>
+                                                    <td><a href="#" class="one">今天</a></td>
+                                                    <td><a href="#" class="one">14</a></td>
+                                                    <td><a href="#" class="one">15</a></td>
+                                                    <td><a href="#" class="one">16</a></td>
+                                                    <td><a href="#" class="one">17</a></td>
+                                                    <td><a href="#" class="one">18</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#" class="one">19</a></td>
+                                                    <td><a href="#" class="one">20</a></td>
+                                                    <td><a href="#" class="one">21</a></td>
+                                                    <td><a href="#" class="one">22</a></td>
+                                                    <td><a href="#" class="one">23</a></td>
+                                                    <td><a href="#" class="one">24</a></td>
+                                                    <td><a href="#" class="one">25</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#" class="one">26</a></td>
+                                                    <td><a href="#" class="one">27</a></td>
+                                                    <td><a href="#" class="one">28</a></td>
+                                                    <td><a href="#" class="one">29</a></td>
+                                                    <td><a href="#" class="one">30</a></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+
+
+                                        <!--7月份的日期-->
+                                        <div id="secondTable">
+                                            <table  class="table2" cellspacing="0">
+                                                <caption style="font-weight: bolder;font-size: 16px;">2017年7月</caption>
+                                                <tr id="tr2">
+                                                    <td>一</td>
+                                                    <td>二</td>
+                                                    <td>三</td>
+                                                    <td>四</td>
+                                                    <td>五</td>
+                                                    <td style="color: red">六</td>
+                                                    <td style="color: red">日</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td><a href="#">1</a></td>
+                                                    <td><a href="#">2</a></td>
+                                                    <td><a href="#">3</a></td>
+                                                    <td><a href="#">4</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">5</a></td>
+                                                    <td><a href="#">6</a></td>
+                                                    <td><a href="#">7</a></td>
+                                                    <td><a href="#">8</a></td>
+                                                    <td><a href="#">9</a></td>
+                                                    <td><a href="#">10</a></td>
+                                                    <td><a href="#">11</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">12</a></td>
+                                                    <td><a href="#">13</a></td>
+                                                    <td><a href="#">14</a></td>
+                                                    <td><a href="#">15</a></td>
+                                                    <td><a href="#">16</a></td>
+                                                    <td><a href="#">17</a></td>
+                                                    <td><a href="#">18</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">19</a></td>
+                                                    <td><a href="#">20</a></td>
+                                                    <td><a href="#">21</a></td>
+                                                    <td><a href="#">22</a></td>
+                                                    <td><a href="#">23</a></td>
+                                                    <td><a href="#">24</a></td>
+                                                    <td><a href="#">25</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">26</a></td>
+                                                    <td><a href="#">27</a></td>
+                                                    <td><a href="#">28</a></td>
+                                                    <td><a href="#">29</a></td>
+                                                    <td><a href="#">30</a></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+
+
+
+
+
+                                            <!--8月份的日期-->
+                                            <div id="thirdTable">
+                                                <table  class="table3" cellspacing="0">
+                                                    <caption style="font-weight: bolder;font-size: 16px;">2017年8月</caption>
+                                                    <tr id="tr3">
+                                                        <td>一</td>
+                                                        <td>二</td>
+                                                        <td>三</td>
+                                                        <td>四</td>
+                                                        <td>五</td>
+                                                        <td style="color: red">六</td>
+                                                        <td style="color: red">日</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><a href="#">1</a></td>
+                                                        <td><a href="#">2</a></td>
+                                                        <td><a href="#">3</a></td>
+                                                        <td><a href="#">4</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">5</a></td>
+                                                        <td><a href="#">6</a></td>
+                                                        <td><a href="#">7</a></td>
+                                                        <td><a href="#">8</a></td>
+                                                        <td><a href="#">9</a></td>
+                                                        <td><a href="#">10</a></td>
+                                                        <td><a href="#">11</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">12</a></td>
+                                                        <td><a href="#">13</a></td>
+                                                        <td><a href="#">14</a></td>
+                                                        <td><a href="#">15</a></td>
+                                                        <td><a href="#">16</a></td>
+                                                        <td><a href="#">17</a></td>
+                                                        <td><a href="#">18</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">19</a></td>
+                                                        <td><a href="#">20</a></td>
+                                                        <td><a href="#">21</a></td>
+                                                        <td><a href="#">22</a></td>
+                                                        <td><a href="#">23</a></td>
+                                                        <td><a href="#">24</a></td>
+                                                        <td><a href="#">25</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">26</a></td>
+                                                        <td><a href="#">27</a></td>
+                                                        <td><a href="#">28</a></td>
+                                                        <td><a href="#">29</a></td>
+                                                        <td><a href="#">30</a></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            </div><!--8月-->
+
+
+
+                                            <!--9月份的日期-->
+                                            <div id="fourTable">
+                                                <table  class="table4" cellspacing="0">
+                                                    <caption style="font-weight: bolder;font-size: 16px;">2017年9月</caption>
+                                                    <tr id="tr4">
+                                                        <td>一</td>
+                                                        <td>二</td>
+                                                        <td>三</td>
+                                                        <td>四</td>
+                                                        <td>五</td>
+                                                        <td style="color: red">六</td>
+                                                        <td style="color: red">日</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><a href="#">1</a></td>
+                                                        <td><a href="#">2</a></td>
+                                                        <td><a href="#">3</a></td>
+                                                        <td><a href="#">4</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">5</a></td>
+                                                        <td><a href="#">6</a></td>
+                                                        <td><a href="#">7</a></td>
+                                                        <td><a href="#">8</a></td>
+                                                        <td><a href="#">9</a></td>
+                                                        <td><a href="#">10</a></td>
+                                                        <td><a href="#">11</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12</td>
+                                                        <td><a href="#">13</a></td>
+                                                        <td><a href="#">14</a></td>
+                                                        <td><a href="#">15</a></td>
+                                                        <td><a href="#">16</a></td>
+                                                        <td><a href="#">17</a></td>
+                                                        <td><a href="#">18</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">19</a></td>
+                                                        <td><a href="#">20</a></td>
+                                                        <td><a href="#">21</a></td>
+                                                        <td><a href="#">22</a></td>
+                                                        <td><a href="#">23</a></td>
+                                                        <td><a href="#">24</a></td>
+                                                        <td><a href="#">25</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">26</a></td>
+                                                        <td><a href="#">27</a></td>
+                                                        <td><a href="#">28</a></td>
+                                                        <td><a href="#">29</a></td>
+                                                        <td><a href="#">30</a></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            </div><!--9月-->
+
+
+                                            <!--10月份的日期-->
+                                            <div id="fiveTable">
+                                                <table  class="table5" cellspacing="0">
+                                                    <caption style="font-weight: bolder;font-size: 16px;">2017年10月</caption>
+                                                    <tr id="tr5">
+                                                        <td>一</td>
+                                                        <td>二</td>
+                                                        <td>三</td>
+                                                        <td>四</td>
+                                                        <td>五</td>
+                                                        <td style="color: red">六</td>
+                                                        <td style="color: red">日</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><a href="#">1</a></td>
+                                                        <td><a href="#">2</a></td>
+                                                        <td><a href="#">3</a></td>
+                                                        <td><a href="#">4</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">5</a></td>
+                                                        <td><a href="#">6</a></td>
+                                                        <td><a href="#">7</a></td>
+                                                        <td><a href="#">8</a></td>
+                                                        <td><a href="#">9</a></td>
+                                                        <td><a href="#">10</a></td>
+                                                        <td><a href="#">11</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">12</a></td>
+                                                        <td><a href="#">13</a></td>
+                                                        <td><a href="#">14</a></td>
+                                                        <td><a href="#">15</a></td>
+                                                        <td><a href="#">16</a></td>
+                                                        <td><a href="#">17</a></td>
+                                                        <td><a href="#">18</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">19</a></td>
+                                                        <td><a href="#">20</a></td>
+                                                        <td><a href="#">21</a></td>
+                                                        <td><a href="#">22</a></td>
+                                                        <td><a href="#">23</a></td>
+                                                        <td><a href="#">24</a></td>
+                                                        <td><a href="#">25</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">26</a></td>
+                                                        <td><a href="#">27</a></td>
+                                                        <td><a href="#">28</a></td>
+                                                        <td><a href="#">29</a></td>
+                                                        <td><a href="#">30</a></td>
+                                                        <td><a href="#">31</a></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            </div><!--8月-->
+
+                                            <!--日期下列表-->
+                                          <div id="ssuo1">
+                                                <table cellspacing="10">
+                                                    <tr>
+                                                    <td><a href="#">6月</a></td>
+                                                    <td><a href="#">7月</a></td>
+                                                    <td><a href="#">8月</a></td>
+                                                    <td><a href="#">9月</a></td>
+                                                        <td><a href="#">10月</a></td>
+                                                </tr></table>
+                                          </div>
+                                        </div>
+
+
+                                </div>
+                                        </div>
+                            </div>
+                        </div>
+                        <!--搜素栏-->
+                        <div id="ss" style="clear: both;"><p id="pp1">可实时搜索 <b>28万</b> 条国内国际航线</p>
+                            <!--隐藏第二部分的选项框-->
+                            <div id="chengren">
+                                <div id="box" style="border: 1px solid #cccccc">
+                                <span>成人</span> <input onclick="ll()" id="in5" type="" value="1" style="width: 71px;height: 35px;outline: none;border: none" readonly>
+                                <div id="cr"onclick="ll()"><b id="bb"></b></div>
+                                </div>
+                                <!--下选数字-->
+                                <div id="shuzi">
+                                    <ul>
+                                        <li><a href="#" onclick="show11(1)" id="a11">1</a></li>
+                                        <li><a href="#" onclick="show11(2)" id="a22">2</a></li>
+                                        <li><a href="#" onclick="show11(3)" id="a33">3</a></li>
+                                        <li><a href="#" onclick="show11(4)" id="a44">4</a></li>
+                                        <li><a href="#" onclick="show11(5)" id="a55">5</a></li>
+                                        <li><a href="#" onclick="show11(6)" id="a66">6</a></li>
+                                        <li><a href="#" onclick="show11(7)" id="a77">7</a></li>
+                                        <li><a href="#" onclick="show11(8)" id="a8">8</a></li>
+                                        <li><a href="#" onclick="show11(9)" id="a9">9</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span id="span2"><input type="BUTTON"></span>
+                        </div>
+                        <!--最下面图片栏-->
+                        <div id="ff">
+                            <a href="#"></a>
+                        </div>
+
+                    </div><!--国内机票下面跳动页面的结尾-->
+
+                    <div id="title1_4">
+                        2222222222222222222222
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="title2">222222222222222222222</div>
+            <div id="title3">33333333333333333333</div>
+            <div id="title4">4444444444</div>
+            <div id="title5">55555555555</div>
+            <div id="title6">666666666666</div>
+            <div id="title7">77777777777</div>
+            <div id="title8">8888888888</div>
+        </div>
+
+    </div>
+    <!--广告栏-->
+    <div id="cx2">
+        <img style="width: 555px;height: 320px" src="img/QNEimage/20170320_diandi_464x320_v1.jpg">
+    </div>
+
+    <!--插入一张酒店推荐大图-->
+    <div >
+        <img style="width: 1250px;margin-top: 20px"  src="img/QNEimage/QQ图片20170611215857.png">
+    </div>
+
+
+    <!--插入特色住宿公寓-->
+    <div id="teshetitle">
+        <h3>特色公寓住宿</h3>
+    </div>
+    <!--插入特设内容的排版布局-->
+    <div id="ts2" style="clear: both;margin-top: 30px;width: 900px;height: 50px">
+        <div id="ts2tit">
+            <ul>
+                <li id="ys1" style="background: #3bb0d0;margin-left: 0px"><a href="#">全国热门去处</a>
+                    <div id="div1" style="width: 1000px;height: 480px;position: absolute"><!--6张图片-->
+                    <!--六张图片的位置-->
+
+                        <div id="img1" style="overflow: hidden;width: 432px;height: 206px;border: 1px solid black;margin-top: 6px;position: relative">
+                            <a href="#"><img src="img/QNEimage/a1.jpg"></a>
+                            <div  id="yinchang1" style="position: relative;">
+                                <h3 style="margin-bottom: 5px;color: white"  >三亚(938个房源)</h3>
+                                <p style="color: white">永远24℃的三亚，是麦兜梦想中的天堂：“蓝天白云，椰林树影，水清沙白”。对于三亚来说，没有所谓的淡季，每一天都正好是最好的那一天。</p>
+                            </div>
+                        </div>
+
+                        <div id="img2" style="overflow: hidden;width: 258px;height: 206px;border: 1px solid black;margin: 6px 5px">
+                            <a href="#"><img src="img/QNEimage/a2.jpg" style="width: 258px;height: 206px"></a>
+                            <div id="yinchang2" style="color: white">
+                            <h3 style="margin-bottom: 5px;">北京 （838个房源）</h3>
+                                <p>积蓄了全国的政治和文化力量，让这座城市显得气势磅礴。又因为曾经被叫做“北平”，她看起来有些文人派头。</p>
+                            </div>
+                        </div>
+
+                        <div id="img3" style="overflow: hidden;width: 258px;height: 206px;border: 1px solid black;margin: 6px 5px">
+                            <a href="#"><img src="img/QNEimage/a3.jpg" style="width: 258px;height: 206px"></a>
+                            <div id="yinchang3" style="color: white">
+                                <h3 style="margin-bottom: 5px;">厦门 （0个房源）</h3>
+                                <p>厦门的生活是咖啡馆的香气，是书本刚打开时扑鼻的油墨味道，是空气中沉甸甸的水汽，是石砖路上叮当作响的自行车，和一路走一路笑的长发姑娘。</p>
+                            </div>
+                        </div>
+
+                        <div id="img4" style="overflow: hidden;width: 432px;height: 206px;border: 1px solid black;margin-top: 6px;position: relative">
+                            <a href="#"><img src="img/QNEimage/a4.jpg"></a>
+                            <div  id="yinchang4" style="position: relative;">
+                                <h3 style="margin-bottom: 5px;color: white"  >丽江 （544个房源）</h3>
+                                <p style="color: white">玉龙雪山下的丽江古城，是中国历史文化名城之一，漫步古城感受这里的一草一木，探寻古城居民的生活形态。</p>
+                            </div>
+                        </div>
+                        <div id="img5" style="overflow: hidden;width: 258px;height: 206px;border: 1px solid black;margin: 6px 5px">
+                            <a href="#"><img src="img/QNEimage/a5.jpg" style="width: 258px;height: 206px"></a>
+                            <div id="yinchang5" style="color: white">
+                                <h3 style="margin-bottom: 5px;">杭州 （264个房源）</h3>
+                                <p>杭州是吴越文化的发源地，素有“人间天堂”之美称。西湖龙井，烟雨茶香，一蓑江南。</p>
+                            </div>
+                        </div>
+                        <div id="img6" style="overflow: hidden;width: 258px;height: 206px;border: 1px solid black;margin: 6px 5px">
+                            <a href="#"><img src="img/QNEimage/a6.jpg" style="width: 258px;height: 206px"></a>
+                            <div id="yinchang6" style="color: white">
+                                <h3 style="margin-bottom: 5px;">上海 （642个房源）</h3>
+                                <p>红漆斑驳的石库门，弄堂里穿透日光的唱片声，烫得整齐的黑发，一贴熨到肌肤的旗袍，咖啡馆、老洋房、高脚杯、香烟升起的雾气，这就是上海。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li id="ys2"><a href="#"> 热卖好房间</a>
+                    <div  id="div2" style="width: 970px;height: 440px;border: 1px solid black;position: absolute"><!--6张图片-->
+                        2222
+                    </div></li>
+                <li id="ys3"><a href="#">适合多人同时住</a>
+                    <div  id="div3" style="width: 970px;height: 440px;border: 1px solid black;position: absolute"><!--6张图片-->
+                        333333
+                    </div></li>
+                <li id="ys4" ><a href="#">周租月租有优惠</a>
+                    <div id="div4" style="width: 970px;height: 440px;border: 1px solid black;position: absolute"><!--6张图片-->
+                        44444444
+                    </div></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--插入右侧公告栏-->
+    <div id="gonggao">
+        <div id="biaoti" style="border: 1px solid #eee"><h6>公告</h6></div>
+        <div id="gg2" style="padding-top: 10px;border: 1px  solid #eee">
+            <ul>
+                <li><a href="#">反网络诈骗专栏</a></li>
+                <li><a href="#">认证导游入驻去哪儿网</a></li>
+                <li><a href="#">去哪儿网已通过支付卡产业数据安全标准</a></li>
+            </ul>
+        </div>
+        <div id="gg3" >
+            <div style="color: black">去哪儿网客服电话<span style="color: #999"><i><img src="img/QNEimage/24h.png"></i>提供24小时服务</span></div>
+            <div style="color: #999;clear: both" >国内客服电话 <span style="color: red">95117</span></div>
+            <div style="color: #999">国际客服电话<span style="color: red">(+8610)82872677</span></div>
+            <div style="color: #999"> 酒店预订热线<span style="color: red">400-666-3223</span></div>
+        </div>
+        <div id="gg4" style="text-align: center">
+            <dl style="color: #02afc7">
+                <dt style="height: 30px;margin-top: 20px">蒙牛未来星活动中奖用户注意啦</dt>
+                <dt style="height: 30px">请小主移驾去哪儿app兑换奖品</dt>
+                <div id="pp"><p>广告</p></div>
+            </dl>
+        </div>
+            <div id="biaoti1" style="border: 1px solid #eee"><h6>去哪儿网广告推荐</h6></div>
+            <div id="jiazhou" style="background:#fcfefe;height: 150px ">
+                <ul style="">
+                    <li><img src="img/QNEimage/20170510_102x88_9435.jpg"></li>
+                    <li style="width: 130px;margin-top: 10px;margin-left: 10px;background: white"><span style="color: #666666">来加州，大胆梦！</span><br>在加州无数梦想在发生<br>来加州和我一起大胆梦</li>
+                </ul>
+            </div>
+        <div>
+            <div id="biaoti3" style="border: 1px solid #eee"><h6>旅行小贴士</h6></div>
+            <div id="gg6" style="padding-top: 10px;border: 1px  solid #eee">
+                <ul>
+                    <li><a href="#">海淀工商喊您年报了</a></li>
+                    <li><a href="#">服药的最佳时间</a></li>
+                    <li><a href="#">吃药讲究姿势</a></li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <!--轮播图片广告-->
+    <div id="box2"><!--轮播图的相框-->
+        <div id="box2_div"><!--放ul li轮播图的-->
+
+            <ul id="box2_ul">
+                <li id="li1"><a href="#"><img src="img/QNEimage/1.jpg" style="width: 970px;height: 288px"></a></li>
+                <li id="li2"><a href="#"><img src="img/QNEimage/2.jpg" style="width: 970px;height: 288px"></a></li>
+                <li id="li3"><a href="#"><img src="img/QNEimage/3.jpg" style="width: 970px;height: 288px"></a></li>
+                <li id="li4"><a href="#"><img src="img/QNEimage/4.jpg" style="width: 970px;height: 288px"></a></li>
+                <li  id="li5"><a href="#"><img src="img/QNEimage/5.jpg" style="width: 970px;height: 288px"></a></li>
+            </ul>
+            <div id="yuandian_div"><!--放小原点的div-->
+                <ul>
+                    <li id="lili1" onclick="yuandian(0)" style="background:#ff4500 "></li>
+                    <li id="lili2" onclick="yuandian(1)"></li>
+                    <li id="lili3" onclick="yuandian(2)"></li>
+                    <li id="lili4" onclick="yuandian(3)"></li>
+                    <li id="lili5" onclick="yuandian(4)"></li>
+                </ul>
+            </div>
+
+            <script>
+                var yuan=["lili1","lili2","lili3","lili4","lili5"]/*原点的id*/
+                var imgarr=["li1","li2","li3","li4","li5"];/*轮播图片的id*/
+                function yuandian(bb){/*点击事件*/
+                            /*点击的时候图片移动*//**/
+                       /* document.getElementById("li1").style.left=-755*bb+"px";
+                        document.getElementById("li2").style.left=-755*bb+"px";
+                        document.getElementById("li3").style.left=-755*bb+"px";
+                        document.getElementById("li4").style.left=-755*bb+"px";
+                        document.getElementById("li5").style.left=-755*bb+"px";*/
+                    /*点击的时候，所有的li都同时移动*/
+                    document.getElementById("li1").style. webkitTransform="translate("+-970*bb+"px,0px)";
+                    document.getElementById("li1").style.transition="-webkit-transform 500ms ease-out";
+                    document.getElementById("li2").style. webkitTransform="translate("+-970*bb+"px,0px)";
+                    document.getElementById("li2").style.transition="-webkit-transform 500ms ease-out";
+                    document.getElementById("li3").style. webkitTransform="translate("+-970*bb+"px,0px)";
+                    document.getElementById("li3").style.transition="-webkit-transform 500ms ease-out";
+                    document.getElementById("li4").style. webkitTransform="translate("+-970*bb+"px,0px)";
+                    document.getElementById("li4").style.transition="-webkit-transform 500ms ease-out";
+                    document.getElementById("li5").style. webkitTransform="translate("+-970*bb+"px,0px)";
+                    document.getElementById("li5").style.transition="-webkit-transform 500ms ease-out";
+                    for(var o=0;o<yuan.length;o++){/*清除其余的背景色*/
+                        document.getElementById(yuan[o]).style.background="#999";
+                    }
+                    document.getElementById(yuan[bb]).style.background="#ff4500";
+                    /*点击的时候，切到需要的图片*/
+
+
+                }
+
+                var b=1;
+                function play(){/*自动播放小原点的背景色*/
+                    for(var j=0;j<yuan.length;j++){//清除p的背景色，同时改变图片的位置
+                        document.getElementById(yuan[j]).style.background="#999";
+                    }
+                    document.getElementById(yuan[b]).style.background="#ff4500";
+
+                    document.getElementById("li1").style. webkitTransform="translate("+(-970*b)+"px,0px)";
+                    document.getElementById("li1").style.transition="-webkit-transform 500ms ease-out";
+                    document.getElementById("li2").style. webkitTransform="translate("+(-970*b)+"px,0px)";
+                    document.getElementById("li2").style.transition="-webkit-transform 500ms ease-out";
+                    document.getElementById("li3").style. webkitTransform="translate("+(-970*b)+"px,0px)";
+                    document.getElementById("li3").style.transition="-webkit-transform 500ms ease-out";
+                    document.getElementById("li4").style. webkitTransform="translate("+(-970*b)+"px,0px)";
+                    document.getElementById("li4").style.transition="-webkit-transform 500ms ease-out";
+                    document.getElementById("li5").style. webkitTransform="translate("+(-970*b)+"px,0px)";
+                    document.getElementById("li5").style.transition="-webkit-transform 500ms ease-out";
+                    b++;
+                    if(b>4){//大于4的时候,从0开始
+                        b=0;   //图片循环
+                    }
+                }
+                var idplay = setInterval(play,3000);
+            </script>
+        </div>
+
+    </div>
+</div>
+
+<!--骆驼书，行万里路-->
+<div id="luotuo" style="width: 970px;height: 500px;clear: both;position: relative;left: 50px;top:480px;">
+    <div id="luotuoshu">
+        <h3 style="display: inline-block">骆驼书</h3><span>读骆驼书，行万里路</span>
+    </div>
+
+
+    <div id="tit" style=";height: 50px">
+        <ul>
+            <li id="tit1" style="background: #3bb0d0;margin-left: 0px">
+                <a href="#">专题</a>
+
+                <div style="background: white;width: 970px;height: 600px;position: absolute;left: -2px">
+                    <div id="nn1" style="width: 188px;height: 500px;">
+                        <div>
+                            <img src="img/QNEimage/luotuo.jpg">
+                        </div>
+                        <div style="margin-top: 15px"><h3 style="font-size: 16px;font-weight: bold;color: rgba(0, 0, 0, 0.64)">热门出境骆驼书</h3>
+                            <div style="font-size: 13px;margin-top: 15px"><span style="color:#02afc7 ">日本花见</span> ：烂漫春光赏尽樱吹雪<br>
+                                <span style="color:#02afc7 ">芭提雅 </span>：风光旖旎的东方夏威夷</div>
+                        </div>
+
+                    </div>
+
+
+                    <div  id="nn2"style="width: 240px;height: 500px;">
+
+                        <div style="position: relative"><!--装图片的div，相对定位-->
+                            <img src="img/QNEimage/luotuo2.jpg" style="width: 240px;height: 339px">
+
+                            <div style="margin-top: 15px"><h3 style="font-size: 16px;font-weight: bold;color: rgba(0, 0, 0, 0.64)"></h3>
+                                <div style="font-size: 13px;margin-top: 52px"><span style="color:#02afc7 ">素可泰 </span> ：承载泰国寺庙文化的王朝古都<br>
+                                    <span style="color:#02afc7 ">胡志明市 ： </span>湄公河上风情浪漫的明珠</div>
+                            </div>
+
+                            <div id="shouer"><!--装阴影的div绝对定位-->
+                                <div id="shouer_1"><!--装阴影内容的div无所谓-->
+                                <div style="font-size: 26px">首尔购物</div>
+                                <div style=" padding-top: 1px;padding-bottom: 10px;font-size: 20px;">Shopping in Seoul</div>
+                                    <div class="bar"></div>
+                               <div class="info">
+                                   作者：修菱 冷钢<br>
+                                   更新时间: 2015-01-20
+                            </div>
+                            <a href="#" id="btn" style="color: white">下&nbsp;载</a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div  id="nn3"style="width: 240px;height: 500px;">
+
+                        <div style="position: relative">
+                            <img src="img/QNEimage/luotuo4.jpg" style="width: 240px;height: 339px">
+
+                            <div style="margin-top: 15px"><h3 style="font-size: 16px;font-weight: bold;color: rgba(0, 0, 0, 0.64)">热门出境骆驼书</h3>
+                                <div style="font-size: 13px;margin-top: 15px"><span style="color:#02afc7 ">甲米</span>:诗情画意、宛如天堂秘境的热带半岛<br>
+                                    <span style="color:#02afc7 ">苏梅岛</span>:拒绝好莱坞选景荣耀的纯天然海岛</div>
+                            </div>
+
+
+                            <div id="shouer3">
+                                <div id="shouer_3">
+                                    <div style="font-size: 26px">首尔购物</div>
+                                    <div style=" padding-top: 1px;padding-bottom: 10px;font-size: 20px;">Shopping in Seoul</div>
+                                    <div class="bar"></div>
+                                    <div class="info">
+                                        作者：修菱 冷钢<br>
+                                        更新时间: 2015-01-20
+                                    </div>
+                                    <a href="#" id="btn3" style="color: white">下&nbsp;载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                           <!-- <div  id="nn3"style="width: 240px;height: 500px;border: 1px solid black">
+                        <div>
+                            <img src="img/QNEimage/luotuo4.jpg" style="width: 240px;height: 339px">
+                        </div>
+                    </div>-->
+
+
+                   <!-- <div id="nn4" style="width: 240px;height: 500px;border: 1px solid black" style="width: 240px;height: 339px">
+                        <div>
+                            <img src="img/QNEimage/luotuo5.jpg" style="width: 240px;height: 339px">
+                        </div>
+                    </div>-->
+                    <div  id="nn4"style="width: 240px;height: 500px;">
+
+                        <div style="position: relative">
+                            <img src="img/QNEimage/luotuo5.jpg" style="width: 240px;height: 339px">
+
+                            <div style="margin-top: 15px"><h3 style="font-size: 16px;font-weight: bold;color: rgba(0, 0, 0, 0.64)"></h3>
+                                <div style="font-size: 13px;margin-top: 52px"><span style="color:#02afc7 ">巴厘岛</span> ：极具人文风情的度假胜地<br>
+                                    <span style="color:#02afc7 ">毛里求斯:</span>印度洋的珍珠，欧洲的后花园</div>
+                            </div>
+
+
+
+                            <div id="shouer4">
+                                <div id="shouer_4">
+                                    <div style="font-size: 26px">首尔购物</div>
+                                    <div style=" padding-top: 1px;padding-bottom: 10px;font-size: 20px;">Shopping in Seoul</div>
+                                    <div class="bar"></div>
+                                    <div class="info">
+                                        作者：修菱 冷钢<br>
+                                        更新时间: 2015-01-20
+                                    </div>
+                                    <a href="#" id="btn4" style="color: white">下&nbsp;载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+
+            <li id="tit2"><a href="#"> 亚洲</a>
+                <div style="width: 970px;height: 600px;border: 1px solid red;position: absolute;left: 0px">
+                    <br>22222222dqwdqwdqwdqwdqwd
+                </div>
+            </li>
+
+            <li id="tit3"><a href="#">欧洲</a>
+                <div style="width: 970px;height: 600px;border: 1px solid red;position: absolute;left: 0px">
+                    <br>3333gregergergreg
+                </div>
+            </li>
+
+
+            <li id="tit4" ><a href="#">北美洲</a>
+                <div style="width: 970px;height: 600px;border: 1px solid red;position: absolute;left: 0px">
+                    <br>4444444ffef
+                </div>
+            </li>
+            </li>
+            <li id="tit5" ><a href="#">大洋洲</a>
+                <div style="width: 970px;height: 600px;border: 1px solid red;position: absolute;left: 0px">
+                    55555555555
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+   <!-- <div>
+        <div style="width: 208px;height: 339px;border: 1px solid black"></div>
+    </div>-->
+</div>
+
+
+    <!--截图-->
+    <div style="width: 1000px;margin-top: 550px;margin-left: 50px;position: relative;z-index: -555">
+        <a href="#"><img src="img/QNEimage/jietu.png" ></a>
+    </div>
+
+
+    <!--网页尾部-->
+    <div id="last">
+        <div>关于Qunar.com
+            |投资者关系|酒店加盟|业务合作|加入我们|"严重违规失信"专项整治举报|安全中心|星骆驼公益|About Us</div>
+        <div>Copyright ©2017 Qunar.com京公网安备110108901530京ICP备05021087号营业执照信息保险经纪资质(京)-非经营性-2016-0110<span id="span1">去哪儿网客服电话95117</span></div>
+        <div><img src="img/qneimage/footer_v10.png"></div>
+    </div>
+
+
+
+
+<!--侧面的导航栏-->
+<div id="cemian" style="cursor: pointer" >
+
+<!--    <div id="daimg" style="position: absolute"><img src="img/QNEimage/ycd.png" ></div>-->
+
+    <!--519疯狂接，抢疯了-->
+    <div id="qfl"></div>
+
+    <!--小白人-->
+    <div id="xbr">
+        <span id="s1"></span>
+        <div style="width: 280px;background-color:white;height: 35px;line-height:35px;position: relative;top: -35px;left: 35px"><span id="xlt"></span>加入成员，立即开始精彩路程！</div>
+    </div>
+    <!--小横岗-->
+    <div id="hgang"></div>
+
+    <!--消息栏-->
+    <div id="xiaoxi">
+        <span id="s3"></span>
+        <span id="s2">消息</span>
+    </div>
+
+
+    <!--dingdan-->
+    <div id="dingdan">
+        <span id="s4"></span>
+        <span id="s5">订单</span>
+    </div>
+
+    <!--账户-->
+    <div id="zh">
+        <span id="s6"></span>
+        <span id="s7">账户</span>
+    </div>
+
+    <!--小横岗-->
+    <div id="hgang2"></div>
+
+
+    <!--二维码的部分-->
+    <!--jianyi-->
+    <div id="xiaoxi2">
+        <span id="s32"></span>
+        <span id="s22">建议</span>
+    </div>
+
+
+    <!--shaoma-->
+    <div id="dingdan2">
+        <span id="s42"></span>
+        <span id="s52">扫码</span>
+        <div id="imgdis" style="position: relative;left: 40px;top: -100px;;"><img src="img/QNEimage/sidecode_v3.png" style="border: 1px solid #f54599"></div>
+    </div>
+
+    <!--chacha-->
+    <div id="zh2" style="margin-top: 5px" onclick="chacha()">
+        <span id="s62"></span>
+        <!--<span id="s72">账户</span>-->
+
+    </div>
+    <!--chacha-->
+        <script>
+            function chacha(){
+                document.getElementById("cemian").style.webkitTransform="translate(-75px,0px)";
+                document.getElementById("cemian").style.transition="-webkit-transform 500ms ease-out";
+                document.getElementById("fkj").style.webkitTransform="translate(95px,0px)";
+                document.getElementById("fkj").style.transition="-webkit-transform 500ms ease-out";
+                document.getElementById("fkj").style.position="fixed";
+            }
+
+            function fkj2(){
+                document.getElementById("cemian").style.webkitTransform="translate(0px,0px)";
+                document.getElementById("cemian").style.transition="-webkit-transform 500ms ease-out";
+                document.getElementById("fkj").style.webkitTransform="translate(-95px,0px)";
+                document.getElementById("fkj").style.transition="-webkit-transform 1000ms ease-out"
+            }
+        </script>
+
+</div>
+    <!--519疯狂节-->
+    <div id="fkj" onclick="fkj2()" style="cursor: pointer">
+
+    </div>
+</body>
+</html>

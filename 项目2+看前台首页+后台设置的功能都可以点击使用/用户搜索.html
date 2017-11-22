@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户搜索</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .re{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--后台导航部分 响应式导航栏-->
+<nav id="nav1" class="navbar navbar-default navbar-fixed-top " style="padding:0px 40px;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="" class="navbar-brand text-capitalize" style="font-size: 25px">maizi admin</a>
+        </div>
+
+        <div id="mynav" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class=""><a href="后台首页.html"  class="glyphicon glyphicon-home "> 后台首页</a></li>
+                <li class="active"><a href="#tabtwo" data-toggle="tab" class="glyphicon glyphicon-user"> 用户管理</a></li>
+                <li><a href="内容管理.html" class="glyphicon glyphicon-list-alt"> 内容管理</a></li>
+                <li><a href="标签管理.html" class="glyphicon glyphicon-tag"> 标签管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li  class="dropdown ">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">admin <span class="caret"></span></a>
+                    <ul  class="dropdown-menu ">
+                        <li><a href="">个人主页</a></li>
+                        <li><a href="">设置</a></li>
+                        <li><a href="">关于</a></li>
+                    </ul>
+                </li>
+                <li><a href="前台首页.html" class="glyphicon glyphicon-off"> 退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid" style="margin-top: 70px">
+    <div class="row">
+        <div class="col-lg-2">
+            <ul class="nav nav-pills nav-stacked">
+                <li  ><a href="用户管理.html" >用户列表</a></li>
+                <li class="active"><a href="#yhtab2" data-toggle="tab">用户搜索</a></li>
+                <li><a href="#"  class="tj" >添加用户</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-10">
+            <p class="lead" style="border-bottom: 1px solid black;padding-bottom: 10px;">用户管理</p>
+            <!--用户列表 ，用户搜索 ， 添加用户3分页-->
+            <ul class="nav nav-tabs">
+                    <li ><a href="用户管理.html" >用户列表</a></li>
+                    <li class="active"><a href="#bd" data-toggle="tab" >用户搜索</a></li>
+                    <li><a href="#"   class="tj">添加用户</a></li>
+                </ul>
+            <div  class="tab-content">
+                <div id="bd" class="tab-pane active">
+                    <!--警告框alert-->
+                    <div class="alert alert-info" style="width: 98%;margin: 10px auto">
+                        <button class="close" data-dismiss="alert">&times;</button>
+                        技巧提示：文件无法匹配，切换按钮！
+                    </div>
+                    <form action="" class="form" id="form1">
+                        <div class="form-group">
+                            <lable for="">用户名</lable>
+                            <input id="in1" type="text" class="form-control" placeholder="请输入用户名">
+                        </div>
+                        <div class="form-group">
+                            <lable for="">UID</lable>
+                            <input id="in2" type="text" class="form-control" placeholder="请输入用户UID">
+                        </div>
+                        <div class="form-group">
+                            <lable for="">选择用户组</lable>
+                            <select name="" id="" class="form-control">
+                                <option value="">限制会员</option>
+                                <option value="">新手上路</option>
+                                <option value="">低级会员</option>
+                                <option value="">中级会员</option>
+                                <option value="">高级会员</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-default" id="tijiao">提交</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+<!--结尾-->
+<div class="text-center container-fluid"  style="margin-top: 20px">
+    <p style="margin: 25px auto;">Copyright ©360.cn. All Rights Reserved.</p>
+</div>
+<!--模态框-->
+<div class="modal fade" id="modal1">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header btn-danger">  <span style="font-size: 30px;font-weight: 900">搜索信息不能为空！</span>
+                <button class="close" data-dismiss="modal" type="button" ><span>&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <lable for="">用户名：</lable><input type="text" class="form-control">
+                <lable for="">UID：</lable><input type="password" class="form-control">
+                <div class="form-group">
+                    <lable for="">选择用户组</lable>
+                    <select name=""  class="form-control">
+                        <option value="">限制会员</option>
+                        <option value="">新手上路</option>
+                        <option value="">低级会员</option>
+                        <option value="">中级会员</option>
+                        <option value="">高级会员</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">确定</button>
+                <button class="btn btn-danger"data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--模态框正在搜索中-->
+<div class="modal fade " id="modal2">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img style="width: 10%;height: 10%" src="images/a.png" alt="">
+                <img style="width: 10%;height: 10%" src="images/b.png" alt="">
+                <img style="width: 10%;height: 10%" src="images/i.png" alt="">
+                <img style="width: 10%;height: 10%" src="images/a.png" alt="">
+                <img style="width: 10%;height: 10%" src="images/i.png" alt="">
+                <img style="width: 10%;height: 10%" src="images/a.png" alt="">
+                <img style="width: 10%;height: 10%" src="images/b.png" alt="">
+                <img style="width: 10%;height: 10%" src="images/i.png" alt="">
+                <img style="width: 10%;height: 10%" src="images/a.png" alt="">
+            </div>
+            <div class="modal-body bg-primary" style="font-size: 20px;font-weight: 900">
+                <img style="" src="images/a.png" alt="">稍等，机器人玩命搜索中...............</div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal">继续搜索</button>
+                <button class="btn btn-default"data-dismiss="modal">取消搜索</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--添加用户模态框-->
+<div class="modal fade" id="modal3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header btn-primary" style="font-size: 20px;font-weight: 900">添加用户  <button class="close " data-dismiss="modal">&times;</button></div>
+            <div class="modal-body">
+                <form action="" class="form" id="form5">
+                    <div class="form-group">
+                        <lable for="">用户名</lable>
+                        <input id="yhm" type="text" class="form-control" placeholder="用户名">
+                    </div>
+                    <div class="form-group">
+                        <lable for="">用户密码</lable>
+                        <input id="mm" type="password" class="form-control" placeholder="请输入用户密码">
+                    </div>
+                    <div class="form-group">
+                        <lable for="">确认用户密码</lable>
+                        <input id="qrmm" type="password" class="form-control" placeholder="请确认输入用户密码">
+                    </div>
+                    <div class="form-group">
+                        <lable for="">请输入用户邮箱</lable>
+                        <input id="yx" type="text" class="form-control" placeholder="请输入用户邮箱">
+                    </div>
+                    <div class="form-group">
+                        <lable for="">选择用户组</lable>
+                        <select name=""  class="form-control">
+                            <option value="">限制会员</option>
+                            <option value="">新手上路</option>
+                            <option value="">低级会员</option>
+                            <option value="">中级会员</option>
+                            <option value="">高级会员</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button class="btn btn-primary" id="tianjiao5"> 验证</button>
+                <button class="btn btn-danger" id="jiaru"> 添加该用户</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $("#tijiao").click(function () {
+            /*表单验证*/
+            var tg=/^\d{1,4}$/;
+            if($("#in2").val()&&$("#in1").val()){
+                if(!tg.test($("#in2").val())){
+                    $("#in2").val("请输入4位数以内的UID！").css("color","red").css("font-size","20px")
+                }
+                if(!isNaN($('#in1').val())){
+                    $("#in1").val("用户名不能为数字！").css("color","red").css("font-size","20px");
+                }
+            }
+
+            /*判断表单是否为空，和正确输入显示模态框*/
+            $("#form1 input").each(function(k,v){
+                if(v.value==""){
+                    $("#modal1").modal("show");
+
+                }else{
+                    if(tg.test($("#in2").val())&&isNaN($('#in1').val())){
+                        $("#modal2").modal("show");
+                    }
+                }
+            })
+            $("#modal1").modal({
+                show:false,
+               /* backdrop:"static"*/
+            })
+
+
+        })
+            $("#in1").focus(function () {
+                $(this).val("").css("color","black").css("font-size","16px")
+            })
+        $("#in2").focus(function () {
+            $(this).val("").css("color","black").css("font-size","16px")
+        })
+
+        /*点击添加用户的时候，显示添加用户模态框*/
+        $(".tj").each(function () {
+            $(this).click(function () {
+                $("#modal3").modal("show");
+            })
+        })
+        $("#modal3").modal({
+            show:false,
+           /* backdrop:"static",*/
+          /*  remote:"添加用户模态框.html"*/
+
+        })
+        /*验证添加用户的表单*/
+        var yonghu=/^\w{1,6}$/;
+        var mima=/^\d{6}$/;
+        var yx=/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+        /*var yx=/^\w+@\w+(\.\w+)+$/;*/
+        $("#tianjiao5").click(function () {
+            if(($("#yhm").val())==""){
+                $("#yhm").val("用户名不能为空！").addClass("re");
+            }else{
+                if(!yonghu.test($("#yhm").val())){
+                    $("#yhm").val("用户名错误，请填写1-6位的字母数字组合！").addClass("re");
+                }
+            }
+            if(($("#mm").val())==""){/*验证密码*/
+                /*$("#mm").val("").css("border","1px solid red").attr("placeholder","密码不能为空");*/
+                $("#mm").attr("type","text").val("密码不能为空！").addClass("re");
+            } else if(!yonghu.test($("#mm").val())){
+                $("#mm").attr("type","text").val("密码错误，请输入6位数的密码！").addClass("re");
+            }
+            /*验证确认密码*/
+            if($("#qrmm").val()==""){
+                $("#qrmm").attr("type","text").val("请填写确认密码，不能为空").addClass("re");
+            }else if($("#qrmm").val()!=$("#mm").val()){
+                $("#qrmm").attr("type","text").val("密码不一致，请重新输入").addClass("re");
+            }
+            /*验证邮箱*/
+            if($("#yx").val()==""){
+                $("#yx").attr("type","text").val("请填写邮箱，不能为空").addClass("re");
+            }else if(!yx.test($("#yx").val())){
+                $("#yx").attr("type","text").val("邮箱格式错误！").addClass("re");
+            }
+
+        })
+        /*获取光标的时候，清空内容*/
+        $("#form5 input").each(function () {
+            $(this).focus(function () {
+                $(this).val("").removeClass("re")
+            })
+        })
+        $("#mm").focus(function () {
+            $(this).attr("type","password");
+        })
+        $("#qrmm").focus(function () {
+            $(this).attr("type","password");
+        })
+
+
+
+
+        /*点击添加该用户的时候，添加到数据库，和用户管理的列表页面,,和用户管理不是一个页面，不写在这里*/
+      /*  $("#jiaru").click(function () {
+            alert(0)
+        })*/
+
+
+    })
+
+</script>
+</html>

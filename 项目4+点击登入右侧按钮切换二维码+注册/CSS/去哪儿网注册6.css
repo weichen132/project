@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    width: 100%;
+    height: 28px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+#top ul li{
+    float: left;
+    list-style: none;
+    font-size: 12px;
+    margin: 7px 10px;
+
+}
+#top ul {
+    padding-left: 970px;
+}
+#log{
+    width: 988px;
+    height: 100px;
+    /*
+    border: 1px solid black;
+    */
+    margin: 0 auto;
+    border-bottom:1px solid #cccccc ;
+}
+/*中间部分*/
+#mid{
+    width: 1050px;
+    height: 500px;
+   /* border: 1px solid black;*/
+    margin: 0 auto;
+}
+/*左边部分*/
+#left{
+    float: left;
+    width: 645px;
+    height: 500px;
+   /* border: 1px solid black;*/
+}
+
+#left1{
+    margin-top: 20px;
+    padding: 10px 70px;
+    color: #999;
+    font-family: tahoma,arial,sans-serif;
+    height: 36px;
+    font-size: 1px\9;
+    -webkit-text-size-adjust: none;
+    vertical-align: middle;
+   /* border: 1px solid black;*/
+}
+#in1{
+    padding-left: 10px;
+}
+#left1_1{
+
+   /* border: 1px solid black;*/
+    float: left;
+    margin-top:8px;
+    margin-right: 10px;
+}
+#left1_2{
+    border:1px solid #cccccc ;
+    width: 256px;
+    height: 36px;
+    float: left;
+}
+#left1_2:hover{
+    border: 1px solid #1b89ae;
+}
+#left1_2 input{
+    width: 214px;
+    height: 34px;
+    border: none;
+    outline: none;
+}
+#left1_3{
+    float: right;
+    width: 25px;
+    height: 15px;
+    margin-top: 10px;
+    text-align: center;
+    border-left:1px dashed #929292;
+}
+
+
+
+/*第二个*/
+#left2{
+    margin-top: 20px;
+    padding: 10px 40px;
+    color: #999;
+    font-family: tahoma,arial,sans-serif;
+    height: 36px;
+    font-size: 1px\9;
+    -webkit-text-size-adjust: none;
+    vertical-align: middle;
+    /*border: 1px solid black;*/
+}
+#in2{
+    padding-left: 10px;
+}
+#left2_1{
+
+    /* border: 1px solid black;*/
+    float: left;
+    margin-top:8px;
+    margin-right: 10px;
+}
+#left2_2{
+    border:1px solid #cccccc ;
+    width: 256px;
+    height: 36px;
+    float: left;
+}
+#left2_2:hover{
+    border: 1px solid #1b89ae;
+}
+#left2_2 input{
+    width: 214px;
+    height: 34px;
+    border: none;
+    outline: none;
+}
+
+
+
+/*登入密码*/
+#left3{
+    margin-top: 20px;
+    padding: 10px 40px;
+    color: #999;
+    font-family: tahoma,arial,sans-serif;
+    height: 36px;
+    font-size: 1px\9;
+    -webkit-text-size-adjust: none;
+    vertical-align: middle;
+   /* border: 1px solid black;*/
+}
+#in3{
+    padding-left: 10px;
+}
+#left3_1{
+
+    /* border: 1px solid black;*/
+    float: left;
+    margin-top:8px;
+    margin-right: 10px;
+}
+#left3_2{
+    border:1px solid #cccccc ;
+    width: 256px;
+    height: 36px;
+    float: left;
+}
+#left3_2:hover{
+    border: 1px solid #1b89ae;
+}
+#left3_2 input{
+    width: 214px;
+    height: 34px;
+    border: none;
+    outline: none;
+}
+
+
+/*验证码和*/
+#right4{
+    margin-top: 30px;
+    width:310px;
+    height: 30px;
+     /*border: 1px solid #cccccc;*/
+    margin-left: 60px;
+}
+
+#input1{
+    float: left;
+    width: 147px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+#input1:hover{
+    outline:1px solid #1b89ae;
+}
+#input2:hover{
+    outline:1px solid #1b89ae;
+}
+#yanzheng{
+    width: 85px;
+    height: 30px;
+    /*border: 1px solid black;*/
+    float: left;
+    margin-left: 17px;
+}
+#aaa{
+    position: relative;
+    left: 120px;
+    top: -30px;
+    line-height: 30px;
+    text-decoration: none;
+    color:#0069ca ;
+    font-size: 14px;
+}
+
+
+/*插入的手机验证码框*/
+#right3x{
+    /*margin-top: 50px;*/
+    width: 310px;
+    height: 30px;
+   /* border: 1px solid #cccccc;*/
+    margin-left: 30px;
+    background-color: white;
+ /*   border: 1px solid black;*/
+    margin-left: 60px;
+}
+/*#right3x i{
+    float: left;
+    background: url(../img/QNEimage/login-icon-v2.png) no-repeat -130px -101px;
+    width: 11px;
+    height: 11px;
+    margin: 9px 10px 0;
+    !*!* border-right:1px solid #cccccc ;*!
+     padding-right: 10px;
+}*/
+#inp2x{
+    color: #666;
+    float: left;
+    margin-top: 5px;
+    /*margin-top: 4px;*/
+    /* margin-top: -12px;
+     margin-left: 30px;*/
+    height: 20px;
+    line-height: 20px;
+    width: 111px;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+}
+#right3x a{
+    float: right;
+    display: inline-block;
+    float: right;
+    width: 85px;
+    height: 22px;
+    line-height: 22px;
+    _line-height: 24px;
+    color: #fff;
+    text-align: center;
+    background: url(https://user.qunar.com/images/ugc/ucenter/login-icon-v2.png) no-repeat 0 -90px;
+    overflow: hidden;
+    margin-top: 5px;
+    text-decoration: none;
+
+}
+
+
+
+/*三个月内自动登录*/
+#right5 {
+    /*margin-top: 30px;*/
+    width: 310px;
+    height: 30px;
+    /* border: 1px solid #cccccc;*/
+    margin-left: 87px;
+    margin-top:20px;
+    /* border: 1px solid black;*/
+    font-size: 12px;
+    line-height: 26px;
+}
+#right5 a{
+    text-decoration: none;
+    color: deepskyblue;
+
+}
+#right5 a:hover{
+    color: red;
+}
+/*登录按钮*/
+#right6 input{
+    border: 0;
+    display: inline-block;
+    background: url(../img/QNEimage/pic_v4.png) no-repeat 0 0;
+    overflow: hidden;
+    width: 125px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    font: bold 14px/30px '宋体';
+    margin-left: 87px;
+    margin-top: 20px;
+   /* border: 1px solid black;*/
+
+}
+#right6{
+    font-size: 14px;
+}
+#right6 a{
+    text-decoration: none;
+    color: deepskyblue;
+
+}
+#right6 a:hover{
+    color: red;
+}
+
+/*右边部分*/
+#right{
+    float: left;
+    width: 400px;
+    height: 455px;
+   /* border: 1px solid black;*/
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*网页尾部*/
+#last{
+    /* border: 1px solid black;*/
+    width: 1002px;
+    height: 200px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #747474;
+    text-align: center;
+}
+#last div{
+    margin: 15px 0px;
+}
+#span1{
+    background: url(../img/QNEimage/24h.png) no-repeat left center;
+    padding-left: 20px;
+}

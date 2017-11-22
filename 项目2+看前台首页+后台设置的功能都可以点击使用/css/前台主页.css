@@ -1,0 +1,90 @@
+#out{
+    width: 100%;
+
+   /* border: 1px solid black;*/
+    overflow: hidden
+}
+#nav1{
+    font-weight: 900;
+    padding: 0 30px;
+}
+.navbar{
+    margin-bottom: 0px;!important;
+}
+/*内容1*/
+#nr1{
+    width: 100%;
+    height: 750px;
+    background: #223f39;
+    padding-top: 100px;
+    overflow: hidden;
+}
+#nr1_1{
+    width: 1000px;
+   /* border: 1px solid white;*/
+    position: relative;
+    color: white;
+    top: 700px;
+}
+/*三个往上滑动的图标*/
+#con2{
+    margin-top: 80px;
+    position: relative;
+    top: 270px;
+    cursor: pointer;
+}
+/*2个往中间靠拢的图标*/
+#con3{
+    margin-top: 50px;
+}
+#con3_1{
+    position: relative;
+    left: -840px;
+}
+#con3_2{
+    position: relative;
+    left: 840px;
+}
+/*往上移动的图标*/
+#con4{
+    margin-top: 50px;
+    position: relative;
+    top: 310px;
+}
+/*最新课程*/
+#con5{
+    display: none;
+}
+
+/*麦子学院App下载*/
+#con6{
+    margin-top: 70px;
+    position: relative;
+    top: 380px;
+}
+/*最后一栏，往中间靠拢*/
+#con7{
+   padding-top: 100px;
+    background-color: rgba(0,0,0,0.7);
+}
+#con7_1{
+    position: relative;
+    left: -840px;
+    color: white;
+}
+#con7_2{
+    position: relative;
+    left: 840px;
+}
+#div1{
+    background: url("../images/dt.png");
+}
+#img2_1{
+    transition:transform 0.2s linear ;
+}
+#img2 :hover #img2_1{
+    transform: scale(1.2);
+}
+.op{
+    opacity: 0.5;
+}

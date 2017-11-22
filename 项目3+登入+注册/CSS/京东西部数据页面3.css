@@ -1,0 +1,301 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*第一行导航栏标签*/
+.top1{
+    border: 1px solid black;
+    background-color: #f1f1f1;
+    height: 30px;
+    padding: 0px 145px;
+    margin-top: 0px;
+
+}
+#l1{
+    margin-right: 200px;
+    width: 90px;
+}
+/*送至:北京,下拉框的文字*/
+#l1 p{
+    text-align: left;
+    margin-left:20px;
+}
+/*顶部导航栏,左浮动*/
+.top1 li{
+    float: left;
+    height: 28px;
+    line-height: 30px;
+    list-style: none;
+    text-align: center;
+    margin: 0px 5px;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: red;
+}
+/*导航栏下拉栏样式 ,设置定位,防止被第二行挡住*/
+#l1>div{
+    display: none;
+    width: 210px;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+}
+#l2>div{
+    padding-left: 20px;
+    text-align: left;
+    display: none;
+    width: 210px;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+}
+#l7>div{/*会出现关注京东,移动过去上面左右摇摆,把li的宽度定一个长度*/
+    border: 1px solid #cccccc;
+    background: url("../img/jingdong/5.jpg");
+    width: 82px;
+    height: 97px;
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+#l7:hover>div{
+    display: block;
+}
+#l3:hover>div{
+    display: block;
+}
+#l1:hover,#l2:hover{
+    background-color: white;
+}
+#l1:hover div{
+    display: block;
+    background-color: white;
+}
+#l2:hover div{
+    display: block;
+    background-color: white;
+}
+#l3{
+    background: url("../img/jingdong/1.png") no-repeat;
+    text-indent: 20px;
+}
+#l3>div{/*移动出来的图片会被下面覆盖,给图片设置相对定位,z-index:1*/
+    background: url("../img/jingdong/4.jpg");
+    width: 250px;
+    height: 195px;
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+#l8>div{
+    width: 170px;
+    height: 300px;
+    border: 1px solid #cccccc;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    display: none;
+
+}
+#l8>div>li{
+    list-style: none;
+
+}
+#l8:hover>div{
+    display: block;
+}
+#l9>div{
+    display: none;
+    width: 300px;
+    border: 1px solid #cccccc;
+    position: absolute;
+    background-color:white ;
+    position: absolute;
+    left: 920px;
+    z-index: 1;
+}
+#l9>div{
+    text-align: left;
+    padding-left: 20px;
+}
+#l9:hover>div{
+    display: block;
+}
+
+
+/*第二行,京东logo ,搜索框*/
+#l4{
+    height: 100px;
+    /*border: 1px solid black;*/
+    /*margin-top: 100px;*/
+}
+#l4_1{/*京东logo定位*/
+    position: absolute;
+    left: 160px;
+    z-index: 0;
+}
+#l4_2{/*搜索框定位*/
+    position: absolute;
+    left: 500px;
+    top: 60px;
+    height: 30px;
+    border-color: #b61f1f;
+}
+#l4_3{
+    position: absolute;
+    left: 910px;
+    top:60px;
+    height: 34px;
+    width: 60px;
+    background-color: #b61f1f;
+    border-color:#b61f1f ;
+    color: white;
+    z-index: 0;
+}
+
+#l4_4{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    font-size:12px ;
+}
+
+/*第三行,全部商品分类导航栏*/
+.top3{
+    padding: 0px 160px;
+    border-bottom:3px solid #B11B1C;
+    height: 45px;
+}
+.top3>ul>li{/*有些时候必须使用>儿子选择器，因为有些嵌套的孙子不能被选中，li不加任何范围的话后患无穷,像首页中的下拉列表*/
+    float: left;
+    list-style: none;
+    margin: 20px;
+
+}
+
+.top3_1{/*所有商品分类,背景色*/
+    height: 25px;
+    background-color:#B11B1C ;
+    width: 200px;
+    text-align: left;
+    word-spacing: 80px;
+    margin: 5px 5px;
+}
+/*移动到所有商品分类的时候,下拉列表出现*/
+.top3_1:hover #top3_2{
+    display: block;
+}
+#top3_2{/*所有商品分类.下拉列表CSS 设置绝对定位,子容器设置定位后,不在占有它的空间*/
+    position: absolute;
+    height: 300px;
+    clear: both;
+    width: 200px;
+    top: 180px;
+    display: none;
+    background-color: #c81825;
+}
+
+
+#top3_3{/*所有分类,右侧隐藏部分绝对定位,父容器不在给它空间*/
+    position: absolute;
+    left: 201px;
+    top:-3px;
+    width:800px;
+    height: 500px;
+    display:none ;
+    border: 1px solid red;
+    padding-left: 10px;
+    background-color: #f2f2f2;
+    z-index: 1;
+
+}
+#top3_4:hover #top3_3{
+    display: block;
+}
+
+/*所有分类下拉列表.右侧隐藏部分css*/
+#top3_3>ul>li{
+    list-style: none;
+    margin: 5px;
+}
+#top3_4>li{
+    list-style: none;
+    height: 40px;
+}
+#top3_5>li{
+    float: left;
+    background-color: rgba(0, 0, 0, 0.34);
+    color: white;
+}
+
+#top3_6>li,#top3_7>li, #top3_8>li{
+    float: left;
+}
+/*第四行,购买选择*/
+#buy{
+    border: solid 1px black;
+    width: 1500px;
+    height: 1000px;
+    clear: both;
+}
+#left{/*左边图片*/
+    /*
+                border: solid 1px black;
+    */
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left:180px;
+    margin-top: 20px;
+}
+#right{/*右侧选择购买*/
+    /*border: 1px solid blue;*/
+    width: 900px;
+    height: 500px;
+    float: left;
+    margin: 20px;
+}
+#right_1{
+    width: 800px;
+    height: 100px;
+    /* border: 1px solid black;*/
+    background-color: #f3f3f3;
+    margin-top: 5px;
+}
+#right_1_1{/*累计评价div*/
+    float: right;border-left: 1px solid #cccccc;padding: 0px 10px
+}
+#right_1_2{/*促销div*/
+    margin-top: 10px;
+
+}
+#right_1_3{/*增值业务*/
+    margin-top: 10px;
+}
+
+/*99元免基础运费(50kg内),点上去显示下面*/
+#right_1_4{
+    background-color: silver;
+    border: 1px solid #cccccc;
+    list-style: none;
+    width: 320px;
+    float: left;
+    margin-left:300px;
+    margin-top: -18px;
+    position: absolute;
+    z-index: 0;
+}
+
+#right_1_4 div{
+    display: none;
+}
+
+#right_1_4>li:hover>div{
+    display: block;
+}
